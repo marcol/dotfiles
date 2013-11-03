@@ -54,18 +54,37 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 * showdesktop: Show desktop
 
 ### Git
+* br: branch
 * ci: commit
-* ca: commit -a
+* ca: Commit all changes
+* co: checkout
 * up: pull
 * rb: rebase
-* p: push
+* ps: push
+* pl: pull
 * solve: mergetool --tool=kdiff3
 * st: status -s -b -unormal
-* df: diff --color --color-words --abbrev
-* lg: log --color --graph --pretty=format:&hellip;
+* tags: verbose output of tags
+* remotes: verbose output of remote
+* branches: : verbose output of branches
+* unstage: remove files from index (tracking)
+* uncommit: go back before last commit, with files in uncommitted state
 * undopush: git push -f origin HEAD^:master
+* amend: Ammend your last commit
+* ammend: Ammend your last commit
+* cp: Grab a change from a branch
+* df: diff --color --color-words --abbrev
+* dh: Show the diff between the latest commit and the current state
+* di: git di $number` shows the diff between the state `$number` revisions ago and the current state
+* dc: Diff what is staged
+* dlast: Diff last committed
+* lg: log --color --graph --pretty=format:&hellip;
+* g: grep -I
 * hist: log --graph --color=always --pretty='[%C(cyan)%h%Creset]%C(* bold cyan)%d%Creset %s' --all
-* branches: for-each-ref --sort=-committerdate refs/heads/
+* cleanup: Remove untracked files, directories and removed stashed states
+* who: Displays committers in descending order of number of commits
+* snapshot: Save a snapshot with date without resetting
+* snapshots: List all snapshots
 
 ## Functions
 * calc: Simple calculator
