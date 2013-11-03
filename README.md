@@ -1,9 +1,5 @@
 # Marco Dias Lopes dotfiles
 
-## Dependencies
-### Install tree
-<pre>brew install tree</pre>
-
 ## Setup .extra
 <pre>
 GIT_AUTHOR_NAME="Your name"
@@ -95,9 +91,9 @@ extract: Extract archives - use: extract, Based on http://dotfiles.org/~pseup/.b
 </pre>
 
 ## TODO
-Implement .hushlogin
-Implement .path
-Implement .screenrc
-Implement .vimrc
-Implement .zshrc
-Implement .vim/
+* Implement .hushlogin
+* Implement .path
+* Implement .screenrc
+* Implement .vimrc
+* Implement .zshrc
+* Implement .vim/
