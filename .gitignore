@@ -1,5 +1,13 @@
 # Compiled Python files
 *.pyc
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.sass-cache
+*.sw?
+*.vi
 
 # Folder view configuration files
 .DS_Store
