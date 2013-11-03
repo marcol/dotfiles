@@ -1,7 +1,7 @@
 # Marco Dias Lopes dotfiles
 
 ## Setup .extra
-The <pre>.extra</pre> should hold your personal configuration. Do not add it to the git repo.
+The <code>.extra</code> should hold your personal configuration. Do not add it to the git repo.
 
 <pre>
 GIT_AUTHOR_NAME="Your name"
