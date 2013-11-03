@@ -4,11 +4,8 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:~/bin:$PATH
 # Make vim the default editor
 export EDITOR="vim"
 
-# Don’t clear the screen after quitting a manual page
-export MANPAGER="less -X"
-
 # Larger bash history (allow 32³ entries; default is 500)
-export HISTSIZE=32768
+export HISTSIZE=10000
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 
@@ -20,11 +17,15 @@ export HISTTIMEFORMAT
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
-# Highlight section titles in manual pages
-export LESS_TERMCAP_md="$ORANGE"
-
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
+
+# Make new shells get the history lines from all previous
+# shells instead of the default "last window closed" history
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
+# Highlight section titles in manual pages
+export LESS_TERMCAP_md="$ORANGE"
 
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto"

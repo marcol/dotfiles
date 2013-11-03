@@ -68,6 +68,7 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 * branches: for-each-ref --sort=-committerdate refs/heads/
 
 ## Functions
+* calc: Simple calculator
 * md: Create a new directory and enter it
 * f: find shorthand
 * cdf: cd into whatever is the forefront Finder window
@@ -79,6 +80,8 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 * escape: Escape UTF-8 characters into their 3-byte format
 * unidecode: Decode \x{ABCD}-style Unicode escape sequences
 * extract: Extract archives - use: extract, Based on http://dotfiles.org/~pseup/.bashrc
+* width: Image width
+* height: Image height
 
 ## TODO
 * Implement .hushlogin
