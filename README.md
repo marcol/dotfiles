@@ -39,7 +39,7 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 * please: sudo alias
 * ip: <code>dig +short myip.opendns.com @resolver1.opendns.com</code>
 * localip: <code>ipconfig getifaddr en1</code>
-* ips: <code>ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'<code>
+* ips: <code>ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'</code>
 * whois: Enhanced WHOIS lookups
 * flush: Flush Directory Service cache
 * sniff: View HTTP traffic
@@ -62,24 +62,24 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 * rb: rebase
 * ps: push
 * pl: pull
-* solve: mergetool --tool=kdiff3
-* st: status -s -b -unormal
+* solve: Solve merges with kdiff3
+* st: Short status
 * tags: verbose output of tags
 * remotes: verbose output of remote
 * branches: : verbose output of branches
 * unstage: remove files from index (tracking)
 * uncommit: go back before last commit, with files in uncommitted state
-* undopush: git push -f origin HEAD^:master
+* undopush: <code>git push -f origin HEAD^:master</code>
 * amend: Amend your last commit
 * cp: Grab a change from a branch
-* df: diff --color --color-words --abbrev
+* df: Pretty diff with abreviation
 * dh: Show the diff between the latest commit and the current state
-* di: git di $number` shows the diff between the state `$number` revisions ago and the current state
+* di: <code>git di $number</code> shows the diff between the state $number revisions ago and the current state
 * dc: Diff what is staged
 * dlast: Diff last committed
-* lg: log --color --graph --pretty=format:&hellip;
-* g: grep -I
-* hist: log --graph --color=always --pretty='[%C(cyan)%h%Creset]%C(* bold cyan)%d%Creset %s' --all
+* lg: Pretty log
+* g: Grep
+* hist: Show history log
 * cleanup: Remove untracked files, directories and removed stashed states
 * who: Displays committers in descending order of number of commits
 * snapshot: Save a snapshot with date without resetting
