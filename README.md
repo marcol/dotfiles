@@ -33,17 +33,17 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 ### Edit
 * subl: Open in Sublime Text
-* c: `cat` with beautiful colors. requires Pygments installed.
+* c: cat with beautiful colors. requires Pygments installed.
 
 ### Web
 * please: sudo alias
-* ip="dig +short myip.opendns.com @resolver1.opendns.com"
-* localip="ipconfig getifaddr en1"
-* ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
-* whois=Enhanced WHOIS lookups
-* flush=Flush Directory Service cache
-* sniff=View HTTP traffic
-* httpdump=View HTTP traffic
+* ip: <code>dig +short myip.opendns.com @resolver1.opendns.com</code>
+* localip: <code>ipconfig getifaddr en1</code>
+* ips: <code>ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'<code>
+* whois: Enhanced WHOIS lookups
+* flush: Flush Directory Service cache
+* sniff: View HTTP traffic
+* httpdump: View HTTP traffic
 
 ### Utilities
 * trimcopy: Trim new lines and copy to clipboard
