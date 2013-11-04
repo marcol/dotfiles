@@ -70,8 +70,7 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 * unstage: remove files from index (tracking)
 * uncommit: go back before last commit, with files in uncommitted state
 * undopush: git push -f origin HEAD^:master
-* amend: Ammend your last commit
-* ammend: Ammend your last commit
+* amend: Amend your last commit
 * cp: Grab a change from a branch
 * df: diff --color --color-words --abbrev
 * dh: Show the diff between the latest commit and the current state
@@ -103,9 +102,5 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 * height: Image height
 
 ## TODO
-* Implement .hushlogin
-* Implement .path
-* Implement .screenrc
 * Implement .vimrc
-* Implement .zshrc
 * Implement .vim/

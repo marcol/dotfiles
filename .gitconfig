@@ -26,7 +26,6 @@
     hist = log --graph --color=always --pretty='[%C(cyan)%h%Creset]%C(cyan)%d%Creset %s' --all
     who = shortlog --numbered --summary --email --no-merges --since="3 months"
     amend = commit --amend
-    ammend = commit --amend
     cp = cherry-pick -x
     snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
     snapshots = !git stash list --grep snapshot
