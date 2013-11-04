@@ -65,5 +65,5 @@ endfunction
 autocmd vimenter * if !argc() | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 
-
+nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 
