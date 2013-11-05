@@ -6,7 +6,7 @@ function doIt() {
 			--exclude ".vim/bundle/vim-javascript-syntax/.git/" \
 			--exclude ".vim/bundle/vim-javascript/.git" \
             --exclude ".vim/bundle/vim-javascript-syntax/.git" \
-            --exclude "README.md" --exclude "LICENSE-MIT.txt" \
+            --exclude "README.md" --exclude "LICENSE" \
 			--exclude "install.sh" --exclude "sync.sh" \
 			--exclude "dotfiles.sublime-project" --exclude "dotfiles.sublime-workspace" -av --no-perms . ~
         source ~/.bash_profile
