@@ -1,4 +1,5 @@
-# Marco Dias Lopes dotfiles
+# Dotfiles
+This is a collection from stolen items from multiple sources. Please feel free to stole these too.
 
 ## Setup .extra
 The <code>.extra</code> should hold your personal configuration. Do not add it to the git repo.
