@@ -1,9 +1,9 @@
 " This must be first, because it changes other options as side effect
 set nocompatible
 
-execute pathogen#infect()
 syntax on
 filetype plugin indent on
+execute pathogen#infect()
 
 if &t_Co >= 256 || has("gui_running")
 	" colorscheme mustang
