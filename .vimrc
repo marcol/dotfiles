@@ -5,16 +5,11 @@ syntax on
 filetype plugin indent on
 execute pathogen#infect()
 
-if &t_Co >= 256 || has("gui_running")
-	" colorscheme mustang
-	colorscheme molokai
-endif
+call pathogen#helptags()
+call pathogen#incubate()
 
-if &t_Co > 2 || has("gui_running")
-	" switch syntax highlighting on, when the terminal has colors
-	syntax on
-endif
-
+set mouse=a
+set hidden
 set nowrap        " don't wrap lines
 set tabstop=4     " a tab is four spaces
 set backspace=indent,eol,start  " allow backspacing over everything in insert mode
@@ -40,26 +35,18 @@ set noswapfile
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 set pastetoggle=<F2>
-set mouse=a
-
-filetype plugin indent on
 
 autocmd filetype html,xml set listchars-=tab:>.
 
-fun! s:ToggleMouse()
-    if !exists("s:old_mouse")
-        let s:old_mouse = "a"
-    endif
+if &t_Co >= 256 || has("gui_running")
+    " colorscheme mustang
+    colorscheme molokai
+endif
 
-    if &mouse == ""
-        let &mouse = s:old_mouse
-        echo "Mouse is for Vim (" . &mouse . ")"
-    else
-        let s:old_mouse = &mouse
-        let &mouse=""
-        echo "Mouse is for terminal"
-    endif
-endfunction
+if &t_Co > 2 || has("gui_running")
+    " switch syntax highlighting on, when the terminal has colors
+    syntax on
+endif
 
 " NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
