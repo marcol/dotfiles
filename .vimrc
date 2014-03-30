@@ -54,6 +54,8 @@ map <C-n> :NERDTreeToggle<CR>
 
 nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 
+nmap <F8> :TagbarToggle<CR>
+
 " For mac users (using the 'apple' key)
 map <D-S-]> gt
 map <D-S-[> gT
