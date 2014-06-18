@@ -7,6 +7,9 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+# Reload bash
+alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
+
 # programs
 alias subl='open -a "Sublime Text"'
 

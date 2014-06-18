@@ -12,7 +12,7 @@
     tags = tag -l
     branches = branch -a
     remotes = remote -v
-    cleanup = !git clean -df && git stash clear
+    cleanup = git clean -df
     unstage = reset HEAD
     uncommit = reset --soft HEAD^
     df = diff --color --color-words --abbrev
@@ -31,8 +31,9 @@
     snapshots = !git stash list --grep snapshot
 [color]
     ui = always
-[mergetool "kdiff3"]
-    path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+[mergetool "vimdiff"]
+    cmd = vim -d "$LOCAL" "$MERGED" "$REMOTE"
+    trustExitCode = true
 [core]
     excludesfile = ~/.gitignore
     attributesfile = ~/.gitattributes
@@ -59,6 +60,7 @@
     log = true
     summary = true
     verbosity = 1
+    tool = vimdiff
 [url "git@github.com:"]
     insteadOf = "gh:"
     pushInsteadOf = "github:"
