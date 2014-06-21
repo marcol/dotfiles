@@ -20,7 +20,7 @@
     uncommit = reset --soft HEAD^
     df = diff --color --color-words --abbrev
     dh = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
-    dci = !"git --no-pager diff --patch-with-stat origin/$(git rev-parse --abbrev-ref HEAD)..HEAD"
+    dci = !"git --no-pager diff --patch-with-stat origin/$(git rev-parse --abbrev-ref HEAD)..HEAD || echo \" $(git rev-list --count HEAD origin/$(git rev-parse --abbrev-ref HEAD)...HEAD) commit\(s\) total\""
     dlast = diff HEAD^
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --
     g = grep -I
