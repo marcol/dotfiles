@@ -37,7 +37,6 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 * c: cat with beautiful colors. requires Pygments installed.
 
 ### Web
-* please: sudo alias
 * ip: <code>dig +short myip.opendns.com @resolver1.opendns.com</code>
 * localip: <code>ipconfig getifaddr en1</code>
 * ips: <code>ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'</code>
@@ -47,48 +46,52 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 * httpdump: View HTTP traffic
 
 ### Utilities
+* tmux: tmux -2
+* please: sudo alias
+* reload: reload .bash_profile
+* update: updated OS X, Ruby gems, Homebrew, Node, npm, gem
 * trimcopy: Trim new lines and copy to clipboard
 * cleanup: Recursively delete `.DS_Store` files
 * emptytrash: Empty the Trash on all mounted volumes and the main HDD
 * lscleanup: Clean up LaunchServices to remove duplicates in the “Open * With” menu
 * hidedesktop: Hide desktop
 * showdesktop: Show desktop
+* chromekill: Kill all the Google Chrome's tabs
 
 ### Git
 * br: branch
 * ci: commit
 * ca: Commit all changes
 * co: checkout
-* up: pull
+* up: pull rebase, prunes branches and shows quick diff
 * rb: rebase
 * ps: push
-* pl: pull
-* solve: Solve merges with kdiff3
-* st: Short status
+* cp: Cherry pick
+* solve: Solve merges with vimdiff
+* st: status
 * tags: verbose output of tags
-* remotes: verbose output of remote
 * branches: : verbose output of branches
+* remotes: verbose output of remote
+* track: Set remote upstream
+* cleanup: Remove untracked files, directories
 * unstage: remove files from index (tracking)
 * uncommit: go back before last commit, with files in uncommitted state
 * undopush: <code>git push -f origin HEAD^:master</code>
 * amend: Amend your last commit
-* cp: Grab a change from a branch
 * df: Pretty diff with abreviation
 * dh: Show the diff between the latest commit and the current state
-* di: <code>git di $number</code> shows the diff between the state $number revisions ago and the current state
-* dc: Diff what is staged
+* dci: Diff of unpushed commits
 * dlast: Diff last committed
 * lg: Pretty log
 * g: Grep
 * hist: Show history log
-* cleanup: Remove untracked files, directories and removed stashed states
-* who: Displays committers in descending order of number of commits
+* rank: Displays committers in descending order of number of commits
 * snapshot: Save a snapshot with date without resetting
 * snapshots: List all snapshots
 
 ## Functions
 * calc: Simple calculator
-* md: Create a new directory and enter it
+* mkd: Create a new directory and enter it
 * f: find shorthand
 * cdf: cd into whatever is the forefront Finder window
 * server: Start an HTTP server from a directory, optionally specifying the port
@@ -101,7 +104,3 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 * extract: Extract archives - use: extract, Based on http://dotfiles.org/~pseup/.bashrc
 * width: Image width
 * height: Image height
-
-## TODO
-* Implement .vimrc
-* Implement .vim/
