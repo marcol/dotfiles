@@ -20,8 +20,7 @@
     uncommit = reset --soft HEAD^
     df = diff --color --color-words --abbrev
     dh = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
-    dc = !"git --no-pager diff --patch-with-stat origin/$(git rev-parse --abbrev-ref HEAD)..HEAD"
-    di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
+    dci = !"git --no-pager diff --patch-with-stat origin/$(git rev-parse --abbrev-ref HEAD)..HEAD"
     dlast = diff HEAD^
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --
     g = grep -I
