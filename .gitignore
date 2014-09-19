@@ -27,3 +27,8 @@ Thumbs.db
 *.sublime-project
 *.sublime-workspace
 .extra
+
+# Project Folders
+node_modules/
+temp/
+bower_components/
