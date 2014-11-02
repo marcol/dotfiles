@@ -1,1 +1,78 @@
 #!/bin/sh
+
+[alias]
+    br = branch
+    ci = commit
+    ca = !git add -A && git commit -av
+    co = checkout
+    up = !sh -c 'git pull --rebase --prune && git log --pretty=format:\"%Cred%ae %Creset- %C(yellow)%s %Creset(%ar)\" HEAD@{1}..'
+    rb = rebase
+    ps = push
+    cp = cherry-pick -x
+    solve = mergetool --tool=vimdiff
+    st = status -s -b -unormal
+    tags = tag -l
+    branches = branch -a
+    remotes = remote -v
+    track = "git branch $(git rev-parse --abbrev-ref HEAD) --set-upstream-to origin/$(git rev-parse --abbrev-ref HEAD)"
+    cleanup = git clean -df
+    unstage = reset HEAD
+    uncommit = reset --soft HEAD^
+    undopush = git push -f origin HEAD^:master
+    amend = commit --amend
+    df = diff --color --color-words --abbrev
+    dh = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+    dci = !"git --no-pager diff --patch-with-stat origin/$(git rev-parse --abbrev-ref HEAD)..HEAD; echo \"\n---> $(git rev-list --count HEAD origin/$(git rev-parse --abbrev-ref HEAD)...HEAD) commit(s) total\""
+    dlast = diff HEAD^
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --
+    g = grep -I
+    hist = log --graph --color=always --pretty='[%C(cyan)%h%Creset]%C(cyan)%d%Creset %s' --all
+    rank = shortlog --numbered --summary --email --no-merges --since='3 months'
+    snapshot = !git stash save "snapshot: $(date)" && git stash apply 'stash@{0}'
+    snapshots = !git stash list --grep snapshot
+[color]
+    ui = always
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[color "diff"]
+    meta = yellow
+    frag = magenta
+    old = red
+[diff]
+    # Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
+    # instead of a/b/c/d as prefixes for patches
+    mnemonicprefix = true
+    algorithm = patience
+    new = green
+[mergetool "vimdiff"]
+    cmd = vim -d "$LOCAL" "$MERGED" "$REMOTE"
+    trustExitCode = true
+[core]
+    excludesfile = ~/.gitignore
+    attributesfile = ~/.gitattributes
+    whitespace = space-before-tab,indent-with-non-tab,trailing-space
+[merge]
+    log = true
+    summary = true
+    verbosity = 1
+    tool = vimdiff
+[url "git@github.com:"]
+    insteadOf = "gh:"
+    pushInsteadOf = "github:"
+    pushInsteadOf = "git://github.com/"
+[url "git://github.com/"]
+    insteadOf = "github:"
+[url "git@gist.github.com:"]
+    insteadOf = "gst:"
+    pushInsteadOf = "gist:"
+    pushInsteadOf = "git://gist.github.com/"
+[url "git://gist.github.com/"]
+    insteadOf = "gist:"
+[push]
+    default = matching
