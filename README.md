@@ -14,8 +14,12 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 </pre>
 
 ## Installation
+<pre>curl -L http://install.ohmyz.sh | sh</pre>
 <pre>cd dotfiles && ./install.sh</pre>
 <pre>cd dotfiles && ./sync.sh</pre>
+
+### References
+[How to Use Homebrew Zsh Instead of Mac OS X Default](http://zanshin.net/2013/09/03/how-to-use-homebrew-zsh-instead-of-max-os-x-default/)
 
 ## Aliases
 

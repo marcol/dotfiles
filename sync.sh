@@ -8,6 +8,7 @@ function doIt() {
 			--exclude ".vim/bundle/vim-javascript/.git" \
             --exclude ".vim/bundle/vim-javascript-syntax/.git" \
             --exclude "README.md" --exclude "LICENSE" \
+            --exclude "tasks.todo" --exclude "terminal" \
 			--exclude "install.sh" --exclude "sync.sh" \
 			--exclude "dotfiles.sublime-project" --exclude "dotfiles.sublime-workspace" -av --no-perms . ~
         source ~/.bash_profile
