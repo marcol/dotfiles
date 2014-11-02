@@ -1,12 +1,1 @@
---ignore-dir=log
---ignore-dir=tmp
---ignore-dir=vendor
---ignore-dir=public/generated
---sort-files
---color
---context=1
---follow
---group
---type-set=javascript=.json
---type-set=markdown=.md,.mdown,.markdown
---type-set=sass=.sass,.scss
+#!/bin/bash
