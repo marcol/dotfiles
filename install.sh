@@ -11,7 +11,7 @@ git pull origin zsh
 
 function linkFiles() {
 
-    for rcfile in "${ZDOTDIR:-$HOME}"/.dotfiles/Other/; do
+    for rcfile in "${ZDOTDIR:-$HOME}"/.dotfiles/Other/^README.md(.N); do
         ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
     done
 
