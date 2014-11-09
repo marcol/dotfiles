@@ -10,7 +10,7 @@ echo "Updating repository from Github"
 git pull origin zsh
 
 function linkFiles() {
-
+    setopt EXTENDED_GLOB
     for rcfile in "${ZDOTDIR:-$HOME}"/.dotfiles/Other/^README.md(.N); do
         ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
     done
