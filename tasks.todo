@@ -1,4 +1,54 @@
-Install:
- ☐ Create install script
- ☐ Add ACK
- ☐ Add tmux
+ZSH
+ ☐ Add prezto as submodule
+ ☐ Config zshrc
+
+Bash files
+ ☐ Add bash files
+     ☐ Aliases
+     ☐ bash_profile
+     ☐ bash_prompt
+     ☐ bashrc
+
+Install
+ ☐ Add initial download and setup
+ ☐ Copy non zsh or bash files
+
+Other
+ ☐ Create folder structure
+ ☐ Create release for bash
+ ☐ Create branch for development
+ ☐ Terminal colors
+ ☐ iTem config
+
+Other files
+ ☐ Add jshintrc
+ ☐ Add bowerrc
+ ☐ Add brew - undestand how it is used
+ ☐ Add ackrc
+ ☐ Add editorconfig
+ ☐ Add exports
+ ☐ Add extra
+ ☐ Add functions
+ ☐ Add hushlogin
+ ☐ Add inputrc
+ ☐ Add jsbeatifyrc
+ ☐ Add jscsrc
+ ☐ Add jshintrc
+ ☐ Add npmignore
+ ☐ Add osx
+ ☐ Add screenrc
+
+Git Files
+ ☐ Add gitconfig
+ ☐ Add gitignore
+ ☐ Add gitmodules
+
+Documentation
+ ☐ Install ZSH
+ ☐ Add repo to ~
+ ☐ Config zsh repo
+ ☐ Extending and configure files
+ ☐ Links for other resources
+ ☐ Copy conventions
+
+
