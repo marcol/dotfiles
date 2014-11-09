@@ -1,21 +1,21 @@
 #!/bin/sh
 
-# setopt EXTENDED_GLOB
-# for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-#   ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-# done
-
 # Update repository
 echo "Updating repository from Github"
 git pull origin zsh
 
 function linkFiles() {
-    setopt EXTENDED_GLOB
-    for rcfile in "${ZDOTDIR:-$HOME}"/.dotfiles/Other/^README.md(.N); do
-        ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+
+    FILES="${ZDOTDIR:-$HOME}/.dotfiles/Other/*"
+
+    for rcfile in $FILES; do
+        echo "processing $rcfile"
+        if [ -e $rcfile ]; then
+            echo "Creating symlink for: ." $(basename "$rcfile")
+            ln -fs "$rcfile" "${ZDOTDIR:-$HOME}/."$(basename "$rcfile")
+        fi
     done
 
-    source ~/.zshrc
 }
 
 # link files
