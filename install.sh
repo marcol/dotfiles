@@ -10,15 +10,12 @@ echo "Updating repository from Github"
 git pull origin zsh
 
 function linkFiles() {
-# rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-#     --exclude ".vim/bundle/vim-javascript-syntax/.git/" \
-#     --exclude ".vim/bundle/vim-javascript/.git" \
-#     --exclude ".vim/bundle/vim-javascript-syntax/.git" \
-#     --exclude "README.md" --exclude "LICENSE" \
-#     --exclude "tasks.todo" --exclude "terminal" \
-#     --exclude "install.sh" --exclude "sync.sh" \
-#     --exclude "dotfiles.sublime-project" --exclude "dotfiles.sublime-workspace" -av --no-perms . ~
-# source ~/.bash_profile
+
+    for rcfile in "${ZDOTDIR:-$HOME}"/.dotfiles/Other/; do
+        ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+    done
+
+    source ~/.zshrc
 }
 
 # link files
