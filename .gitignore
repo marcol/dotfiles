@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Project Folders
+node_modules/
+temp/
+tmp/
+bower_components/
+
+# Current project
+extra
