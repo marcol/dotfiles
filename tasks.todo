@@ -27,16 +27,16 @@ Other files
  ☐ Add ackrc
  ✔ Add editorconfig @done (14-11-10 22:05)
  ☐ Add exports
- ☐ Add extra
+ ✔ Add extra @done (14-11-10 22:16)
  ☐ Add functions
- ☐ Add hushlogin
+ ✔ Add hushlogin @done (14-11-10 22:26)
  ☐ Add inputrc
  ✔ Add jsbeatifyrc @done (14-11-09 23:54)
  ✔ Add jscsrc @done (14-11-09 23:54)
  ✔ Add jshintrc @done (14-11-09 23:54)
- ☐ Add npmignore
+ ✔ Add npmignore @done (14-11-10 22:44)
  ☐ Add osx
- ☐ Add screenrc
+ ✔ Add screenrc @done (14-11-10 22:30)
 
 Git Files
  ☐ Add gitconfig
