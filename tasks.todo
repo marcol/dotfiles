@@ -4,31 +4,32 @@ ZSH
  ☐ Config other .zsh files
 
 Bash files
- ☐ Add bash files
-     ☐ Aliases
-     ☐ bash_profile
-     ☐ bash_prompt
-     ☐ bashrc
+ ✔ Add bash files @done (14-11-10 23:32)
+     ✔ Aliases @done (14-11-10 23:32)
+     ✔ bash_profile @done (14-11-10 23:32)
+     ✔ bash_prompt @done (14-11-10 23:32)
+     ✔ bashrc @done (14-11-10 23:32)
+ ☐ Create documentation for Bash
 
 Install
  ✔ Add initial download and setup @done (14-11-09 23:53)
  ✔ Copy non zsh or bash files @done (14-11-09 23:54)
 
 Other
- ☐ Create folder structure
- ☐ Create release for bash
- ☐ Create branch for development
- ☐ Terminal colors
- ☐ iTem config
+ ✔ Create folder structure @done (14-11-10 23:32)
+ ✔ Create release for bash @done (14-11-10 23:32)
+ ✔ Create branch for development @done (14-11-10 23:32)
+ ✔ Terminal colors @done (14-11-10 23:32)
+ ✔ iTem config @done (14-11-10 23:39)
 
 Other files
- ☐ Add bowerrc
- ☐ Add brew - undestand how it is used
- ☐ Add ackrc
+ ✔ Add bowerrc @done (14-11-10 23:33)
+ ☐ Add brew - undestand how it is used, add to install
+ ☐ Add ackrc - add to install
  ✔ Add editorconfig @done (14-11-10 22:05)
  ☐ Add exports
  ✔ Add extra @done (14-11-10 22:16)
- ☐ Add functions
+ ✔ Add functions @done (14-11-10 23:33)
  ✔ Add hushlogin @done (14-11-10 22:26)
  ☐ Add inputrc
  ✔ Add jsbeatifyrc @done (14-11-09 23:54)
