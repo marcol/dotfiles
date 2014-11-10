@@ -13,7 +13,7 @@ function linkFiles() {
     for rcfile in $FILES; do
         echo "processing $rcfile"
         if [ -e $rcfile ]; then
-            echo "Creating symlink for: ." $(basename "$rcfile")
+            echo "Creating symlink for: ."$(basename "$rcfile")
             ln -fs "$rcfile" "${ZDOTDIR:-$HOME}/."$(basename "$rcfile")
         fi
     done
