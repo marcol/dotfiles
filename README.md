@@ -32,6 +32,4 @@ GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 </pre>
 
-You can also add there the singular exports.
-
 ## References
