@@ -6,7 +6,9 @@ git pull origin zsh
 
 function linkFiles() {
 
-    FILES="${ZDOTDIR:-$HOME}/.dotfiles/Other/*"
+    FILES="${ZDOTDIR:-$HOME}/.dotfiles/Other/*
+        ${ZDOTDIR:-$HOME}/.dotfiles/Bash/*
+        ${ZDOTDIR:-$HOME}/.dotfiles/Git/*"
 
     for rcfile in $FILES; do
         echo "processing $rcfile"
