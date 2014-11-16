@@ -9,7 +9,8 @@ function linkFiles() {
     FILES="${ZDOTDIR:-$HOME}/.dotfiles/System/*
         ${ZDOTDIR:-$HOME}/.dotfiles/Bash/*
         ${ZDOTDIR:-$HOME}/.dotfiles/JavaScript/*
-        ${ZDOTDIR:-$HOME}/.dotfiles/Git/*"
+        ${ZDOTDIR:-$HOME}/.dotfiles/Git/*
+        ${ZDOTDIR:-$HOME}/.dotfiles/User/*"
 
     for rcfile in $FILES; do
         echo "processing $rcfile"
@@ -23,11 +24,12 @@ function linkFiles() {
 
 function sourceFiles() {
 
-    FILES="${ZDOTDIR:-$HOME}/.extra"
+    FILES="${ZDOTDIR:-$HOME}/.zshrc
+        ${ZDOTDIR:-$HOME}/.extra"
 
     for rcfile in $FILES; do
         if [ -e $rcfile ]; then
-            echo "sourcing"$(basename "$rcfile")
+            echo "sourcing: "$(basename "$rcfile")
             source $rcfile
         fi
     done

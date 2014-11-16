@@ -21,7 +21,7 @@ chsh -s /bin/zsh
 5. Open a new ZSH terminal window or tab.
 
 ## Setup extra
-The <code>extra</code> file should hold your personal configuration. Do not add it to the git repo.
+The <code>extra</code> file should hold your personal configuration, you can place inside any of the folder of the repository. Do not add it to the git repo.
 
 <pre>
 GIT_AUTHOR_NAME="Your name"
@@ -33,3 +33,4 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 </pre>
 
 ## References
+* [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
