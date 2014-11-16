@@ -25,14 +25,14 @@ Other
 
 Other files
  ✔ Add bowerrc @done (14-11-10 23:33)
- ☐ Add brew - undestand how it is used, add to install
+ ✔ Add brew - undestand how it is used, add to install @done (14-11-16 18:16)
  ☐ Add ackrc - add to install
  ✔ Add editorconfig @done (14-11-10 22:05)
  ✔ Add exports @done (14-11-16 17:49)
  ✔ Add extra @done (14-11-10 22:16)
  ✔ Add functions @done (14-11-10 23:33)
  ✔ Add hushlogin @done (14-11-10 22:26)
- ☐ Add inputrc
+ ✔ Add inputrc @done (14-11-16 18:54)
  ✔ Add jsbeatifyrc @done (14-11-09 23:54)
  ✔ Add jscsrc @done (14-11-09 23:54)
  ✔ Add jshintrc @done (14-11-09 23:54)
@@ -46,6 +46,7 @@ Git Files
  ✔ Add gitmodules @done (14-11-10 00:06)
  ☐ Update gitconfig
  ☐ Add completion for zsh
+ ☐ Solve issue with author in gitconfig
 
 Documentation
  ☐ Install ZSH
