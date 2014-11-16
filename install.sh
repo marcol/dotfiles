@@ -8,15 +8,15 @@ git submodule update
 
 function linkFiles() {
 
-    FILES="${ZDOTDIR:-$HOME}/.dotfiles/System/
-        ${ZDOTDIR:-$HOME}/.dotfiles/Bash/
-        ${ZDOTDIR:-$HOME}/.dotfiles/JavaScript/
-        ${ZDOTDIR:-$HOME}/.dotfiles/Git/
-        ${ZDOTDIR:-$HOME}/.dotfiles/User/"
+    FILES="${ZDOTDIR:-$HOME}/.dotfiles/System/!(*.md)
+        ${ZDOTDIR:-$HOME}/.dotfiles/Bash/!(*.md)
+        ${ZDOTDIR:-$HOME}/.dotfiles/JavaScript/!(*.md)
+        ${ZDOTDIR:-$HOME}/.dotfiles/Git/!(*.md)
+        ${ZDOTDIR:-$HOME}/.dotfiles/User/!(*.md)"
 
     echo "\n*** Linking files"
 
-    for rcfile in $FILES"!(*.md)"; do
+    for rcfile in $FILES; do
         if [ -e $rcfile ]; then
             echo "Creating symlink for: ."$(basename "$rcfile")
             ln -fs "$rcfile" "${ZDOTDIR:-$HOME}/."$(basename "$rcfile")
@@ -27,14 +27,14 @@ function linkFiles() {
 
 function sourceFiles() {
 
-    FILES="${ZDOTDIR:-$HOME}/Users/"
+    FILES="${ZDOTDIR:-$HOME}/.dotfiles/User/!(*.md)"
 
     echo "\n*** Sourcing files"
 
-    for rcfile in $FILES"!(*.md)"; do
-        if [ -e $rcfile ]; then
+    for rcfile in $FILES; do
+        if [ -e "${ZDOTDIR:-$HOME}/."$(basename "$rcfile") ]; then
             echo "sourcing: "$(basename "$rcfile")
-            source $rcfile
+            source "${ZDOTDIR:-$HOME}/."$(basename "$rcfile")
         fi
     done
 
@@ -52,7 +52,7 @@ function setupPrezto() {
 
     for rcfile in $FILES; do
         if [ -e $rcfile ]; then
-            ln -fs "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+            ln -fs "$rcfile" "${ZDOTDIR:-$HOME}/."$(basename "$rcfile")
         fi
     done
 
@@ -68,9 +68,9 @@ else
 
         shopt -s extglob
 
-        linkFiles
+        # linkFiles
         setupPrezto
-        sourceFiles
+        # sourceFiles
 
         shopt -u extglob
 
