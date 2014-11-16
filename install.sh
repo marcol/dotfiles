@@ -52,6 +52,7 @@ function setupPrezto() {
 
     for rcfile in $FILES; do
         if [ -e $rcfile ]; then
+            echo "Creating symlink for: ."$(basename "$rcfile")
             ln -fs "$rcfile" "${ZDOTDIR:-$HOME}/."$(basename "$rcfile")
         fi
     done
@@ -68,9 +69,9 @@ else
 
         shopt -s extglob
 
-        # linkFiles
+        linkFiles
         setupPrezto
-        # sourceFiles
+        sourceFiles
 
         shopt -u extglob
 
