@@ -24,14 +24,27 @@ function linkFiles() {
 
 function sourceFiles() {
 
-    FILES="${ZDOTDIR:-$HOME}/.zshrc
-        ${ZDOTDIR:-$HOME}/.extra"
+    FILES="${ZDOTDIR:-$HOME}/Users/*"
 
     for rcfile in $FILES; do
         if [ -e $rcfile ]; then
             echo "sourcing: "$(basename "$rcfile")
             source $rcfile
         fi
+    done
+
+}
+
+function setupPrezto() {
+
+    setopt EXTENDED_GLOB
+
+    echo "Setting Prezto"
+
+    ln -s "${ZDOTDIR:-$HOME}/.dotfiles/prezto" "${ZDOTDIR:-$HOME}/.zpreztorc"
+
+    for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+      ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
     done
 
 }
@@ -44,6 +57,7 @@ else
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
         linkFiles
+        setupPrezto
         sourceFiles
     fi
 fi
