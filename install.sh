@@ -40,22 +40,22 @@ function sourceFiles() {
 
 }
 
-function setupPrezto() {
+function setupOMZ() {
 
-    FOLDER="${ZDOTDIR:-$HOME}/.zprezto"
-    FILES="${ZDOTDIR:-$HOME}/.zprezto/runcoms/!(*.md)"
+    # FOLDER="${ZDOTDIR:-$HOME}/.zprezto"
+    # FILES="${ZDOTDIR:-$HOME}/.zprezto/runcoms/!(*.md)"
 
-    echo "\n*** Setting Prezto"
+    # echo "\n*** Setting Prezto"
 
-    rm -rf $FOLDER
-    ln -fs "${ZDOTDIR:-$HOME}/.dotfiles/prezto/" $FOLDER
+    # rm -rf $FOLDER
+    # ln -fs "${ZDOTDIR:-$HOME}/.dotfiles/prezto/" $FOLDER
 
-    for rcfile in $FILES; do
-        if [ -e $rcfile ]; then
-            echo "Creating symlink for: ."$(basename "$rcfile")
-            ln -fs "$rcfile" "${ZDOTDIR:-$HOME}/."$(basename "$rcfile")
-        fi
-    done
+    # for rcfile in $FILES; do
+    #     if [ -e $rcfile ]; then
+    #         echo "Creating symlink for: ."$(basename "$rcfile")
+    #         ln -fs "$rcfile" "${ZDOTDIR:-$HOME}/."$(basename "$rcfile")
+    #     fi
+    # done
 
 }
 
@@ -70,7 +70,7 @@ else
         shopt -s extglob
 
         linkFiles
-        setupPrezto
+        # setupOMZ
         sourceFiles
 
         shopt -u extglob
