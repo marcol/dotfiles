@@ -2,6 +2,7 @@ ZSH
  ✔ Add prezto as submodule @done (14-11-10 00:00)
  ☐ Config zshrc
  ☐ Config other .zsh files
+ ☐ Check how to integrate exports
 
 Bash files
  ✔ Add bash files @done (14-11-10 23:32)
@@ -27,7 +28,7 @@ Other files
  ☐ Add brew - undestand how it is used, add to install
  ☐ Add ackrc - add to install
  ✔ Add editorconfig @done (14-11-10 22:05)
- ☐ Add exports
+ ✔ Add exports @done (14-11-16 17:49)
  ✔ Add extra @done (14-11-10 22:16)
  ✔ Add functions @done (14-11-10 23:33)
  ✔ Add hushlogin @done (14-11-10 22:26)
@@ -43,6 +44,7 @@ Git Files
  ☐ Add gitconfig
  ☐ Add gitignore
  ✔ Add gitmodules @done (14-11-10 00:06)
+ ☐ Add completion for zsh
 
 Documentation
  ☐ Install ZSH
