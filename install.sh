@@ -12,7 +12,8 @@ function linkFiles() {
         ${ZDOTDIR:-$HOME}/.dotfiles/Bash/!(*.md)
         ${ZDOTDIR:-$HOME}/.dotfiles/JavaScript/!(*.md)
         ${ZDOTDIR:-$HOME}/.dotfiles/Git/!(*.md)
-        ${ZDOTDIR:-$HOME}/.dotfiles/User/!(*.md)"
+        ${ZDOTDIR:-$HOME}/.dotfiles/User/!(*.md)
+        ${ZDOTDIR:-$HOME}/.dotfiles/Zsh/!(*.md)"
 
     echo "\n*** Linking files"
 
@@ -40,25 +41,6 @@ function sourceFiles() {
 
 }
 
-function setupOMZ() {
-
-    # FOLDER="${ZDOTDIR:-$HOME}/.zprezto"
-    # FILES="${ZDOTDIR:-$HOME}/.zprezto/runcoms/!(*.md)"
-
-    # echo "\n*** Setting Prezto"
-
-    # rm -rf $FOLDER
-    # ln -fs "${ZDOTDIR:-$HOME}/.dotfiles/prezto/" $FOLDER
-
-    # for rcfile in $FILES; do
-    #     if [ -e $rcfile ]; then
-    #         echo "Creating symlink for: ."$(basename "$rcfile")
-    #         ln -fs "$rcfile" "${ZDOTDIR:-$HOME}/."$(basename "$rcfile")
-    #     fi
-    # done
-
-}
-
 # link files
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
     linkFiles
@@ -70,7 +52,6 @@ else
         shopt -s extglob
 
         linkFiles
-        # setupOMZ
         sourceFiles
 
         shopt -u extglob
@@ -81,5 +62,4 @@ else
 fi
 
 unset linkFiles
-unset setupPrezto
 unset sourceFiles
