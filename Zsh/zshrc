@@ -49,6 +49,13 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+
+# Load extras
+for file in ~/.extra*; do
+    echo "$file"
+    [ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
