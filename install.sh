@@ -8,11 +8,11 @@ git submodule update
 
 function linkFiles() {
 
-    FILES="${ZDOTDIR:-$HOME}/.dotfiles/System/*
-        ${ZDOTDIR:-$HOME}/.dotfiles/Bash/*
-        ${ZDOTDIR:-$HOME}/.dotfiles/JavaScript/*
-        ${ZDOTDIR:-$HOME}/.dotfiles/Git/*
-        ${ZDOTDIR:-$HOME}/.dotfiles/User/*"
+    FILES="${ZDOTDIR:-$HOME}/.dotfiles/System/
+        ${ZDOTDIR:-$HOME}/.dotfiles/Bash/
+        ${ZDOTDIR:-$HOME}/.dotfiles/JavaScript/
+        ${ZDOTDIR:-$HOME}/.dotfiles/Git/
+        ${ZDOTDIR:-$HOME}/.dotfiles/User/"
 
     echo "\n*** Linking files"
 
@@ -27,7 +27,7 @@ function linkFiles() {
 
 function sourceFiles() {
 
-    FILES="${ZDOTDIR:-$HOME}/Users/*"
+    FILES="${ZDOTDIR:-$HOME}/Users/"
 
     echo "\n*** Sourcing files"
 
