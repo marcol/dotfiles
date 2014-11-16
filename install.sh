@@ -23,12 +23,12 @@ function linkFiles() {
 
 function sourceFiles() {
 
-    FILES=".extra"
+    FILES="${ZDOTDIR:-$HOME}/.extra"
 
     for rcfile in $FILES; do
         if [ -e $rcfile ]; then
-            echo "sourcing $rcfile"
-            source "${ZDOTDIR:-$HOME}/"$(basename "$rcfile")
+            echo "sourcing"$(basename "$rcfile")
+            source $rcfile
         fi
     done
 
