@@ -21,6 +21,19 @@ function linkFiles() {
 
 }
 
+function sourceFiles() {
+
+    FILES=".extra"
+
+    for rcfile in $FILES; do
+        if [ -e $rcfile ]; then
+            echo "sourcing $rcfile"
+            source "${ZDOTDIR:-$HOME}/"$(basename "$rcfile")
+        fi
+    done
+
+}
+
 # link files
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
     linkFiles
@@ -29,6 +42,7 @@ else
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
         linkFiles
+        sourceFiles
     fi
 fi
 
