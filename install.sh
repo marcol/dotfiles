@@ -3,6 +3,8 @@
 # Update repository
 echo "Updating repository from Github"
 git pull origin zsh
+git submodule init
+git submodule update
 
 function linkFiles() {
 
@@ -12,8 +14,9 @@ function linkFiles() {
         ${ZDOTDIR:-$HOME}/.dotfiles/Git/*
         ${ZDOTDIR:-$HOME}/.dotfiles/User/*"
 
-    for rcfile in $FILES; do
-        echo "processing $rcfile"
+    echo "\n*** Linking files"
+
+    for rcfile in $FILES"!(*.md)"; do
         if [ -e $rcfile ]; then
             echo "Creating symlink for: ."$(basename "$rcfile")
             ln -fs "$rcfile" "${ZDOTDIR:-$HOME}/."$(basename "$rcfile")
@@ -26,7 +29,9 @@ function sourceFiles() {
 
     FILES="${ZDOTDIR:-$HOME}/Users/*"
 
-    for rcfile in $FILES; do
+    echo "\n*** Sourcing files"
+
+    for rcfile in $FILES"!(*.md)"; do
         if [ -e $rcfile ]; then
             echo "sourcing: "$(basename "$rcfile")
             source $rcfile
@@ -37,14 +42,18 @@ function sourceFiles() {
 
 function setupPrezto() {
 
-    setopt EXTENDED_GLOB
+    FOLDER="${ZDOTDIR:-$HOME}/.zprezto"
+    FILES="${ZDOTDIR:-$HOME}/.zprezto/runcoms/!(*.md)"
 
-    echo "Setting Prezto"
+    echo "\n*** Setting Prezto"
 
-    ln -s "${ZDOTDIR:-$HOME}/.dotfiles/prezto" "${ZDOTDIR:-$HOME}/.zpreztorc"
+    rm -rf $FOLDER
+    ln -fs "${ZDOTDIR:-$HOME}/.dotfiles/prezto/" $FOLDER
 
-    for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-      ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+    for rcfile in $FILES; do
+        if [ -e $rcfile ]; then
+            ln -fs "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+        fi
     done
 
 }
@@ -56,10 +65,20 @@ else
     read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
+
+        shopt -s extglob
+
         linkFiles
         setupPrezto
         sourceFiles
+
+        shopt -u extglob
+
     fi
+
+    echo "\nDone!"
 fi
 
 unset linkFiles
+unset setupPrezto
+unset sourceFiles
