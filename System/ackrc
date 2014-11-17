@@ -1,0 +1,56 @@
+#!/bin/sh
+
+# only search with case sensitivity if there is mixed case
+--smart-case
+
+# sorts the found files lexically. Use this if you want your file listings to 
+# be deterministic between runs of ack.
+--sort-files
+
+# always color, even if piping to another program
+--color
+
+# groups matches by file name with. This is the default when used interactively.
+--group
+
+# follow symlinks
+--follow
+
+# search other filetypes
+--type-add
+ruby=haml,rabl,builder
+
+# extend original types
+--type-add=ruby=.rake,Rakefile,Capfile,Gemfile
+--type-add=html=.erb,.slim,.haml,.jade
+--type-add=js=.coffee,.json
+--type-add=css=.scss,.sass,.styl
+
+# additional types
+--type-set=erb=.erb
+--type-set=haml=.haml
+--type-set=slim=.slim
+--type-set=sass=.sass
+--type-set=scss=.scss
+--type-set=cucumber=.feature
+--type-set=coffee=.coffee
+--type-set=yaml=.yml
+--type-set=markdown=.markdown,.md,.mdown,.mkd,.mkdn
+--type-set=textile=.textile
+--type-set=documentation=.markdown,.md,.mdown,.mkd,.mkdn,.textile,.rdoc,.pod.txt
+--type-set=log=.log
+--type-set=json=.json
+--type-set=jade=.jade
+--type-set=styl=.styl
+
+# ignore some dirs
+--ignore-dir=.bundle
+--ignore-dir=vendor/bundle
+--ignore-dir=tmp
+--ignore-dir=log
+--ignore-dir=.tmp
+--ignore-dir=bower_components
+--ignore-dir=node_modules
+
+# ignore some files
+--ignore-file=is:tags
