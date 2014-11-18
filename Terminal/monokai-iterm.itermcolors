@@ -23,47 +23,47 @@
 	<key>Ansi 10 Color</key>
 	<dict>
 		<key>Blue Component</key>
-		<real>0.13487696647644043</real>
+		<real>0.1066051572561264</real>
 		<key>Green Component</key>
-		<real>1</real>
+		<real>0.88438820838928223</real>
 		<key>Red Component</key>
-		<real>0.59985965490341187</real>
+		<real>0.59492915868759155</real>
 	</dict>
 	<key>Ansi 11 Color</key>
 	<dict>
 		<key>Blue Component</key>
-		<real>0.0099028181284666061</real>
+		<real>0.097161926329135895</real>
 		<key>Green Component</key>
-		<real>0.82301491498947144</real>
+		<real>0.50934082269668579</real>
 		<key>Red Component</key>
-		<real>1</real>
+		<real>0.97595852613449097</real>
 	</dict>
 	<key>Ansi 12 Color</key>
 	<dict>
 		<key>Blue Component</key>
-		<real>1</real>
+		<real>0.99893689155578613</real>
 		<key>Green Component</key>
-		<real>0.5914568305015564</real>
+		<real>0.44784179329872131</real>
 		<key>Red Component</key>
-		<real>0.19910268485546112</real>
+		<real>0.71248877048492432</real>
 	</dict>
 	<key>Ansi 13 Color</key>
 	<dict>
 		<key>Blue Component</key>
-		<real>0.67846226692199707</real>
+		<real>0.37672483921051025</real>
 		<key>Green Component</key>
-		<real>0.0552544966340065</real>
+		<real>0.0</real>
 		<key>Red Component</key>
-		<real>1</real>
+		<real>0.96166986227035522</real>
 	</dict>
 	<key>Ansi 14 Color</key>
 	<dict>
 		<key>Blue Component</key>
-		<real>1</real>
+		<real>0.9254535436630249</real>
 		<key>Green Component</key>
-		<real>1</real>
+		<real>0.81955307722091675</real>
 		<key>Red Component</key>
-		<real>0.3333333432674408</real>
+		<real>0.34764775633811951</real>
 	</dict>
 	<key>Ansi 15 Color</key>
 	<dict>
@@ -140,11 +140,11 @@
 	<key>Ansi 9 Color</key>
 	<dict>
 		<key>Blue Component</key>
-		<real>0.0</real>
+		<real>0.10494983196258545</real>
 		<key>Green Component</key>
-		<real>0.0</real>
+		<real>0.010136669501662254</real>
 		<key>Red Component</key>
-		<real>0.97352433204650879</real>
+		<real>0.86124289035797119</real>
 	</dict>
 	<key>Background Color</key>
 	<dict>
