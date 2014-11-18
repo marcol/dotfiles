@@ -1,7 +1,7 @@
 ZSH
  ✔ Add prezto as submodule @done (14-11-10 00:00)
- ☐ Config zshrc
- ☐ Config other .zsh files
+ ☐ Config zshrc (clean up file)
+ ✔ Config other .zsh files @done (14-11-18 23:33)
  ☐ Check how to integrate exports
 
 Bash files
@@ -55,5 +55,7 @@ Documentation
  ☐ Extending and configure files
  ☐ Links for other resources
  ☐ Copy conventions
+ ☐ Add example for .extra-git
+ ☐ Add example for .extra-zsh
 
 

@@ -1,5 +1,5 @@
 # Dotfiles
-This is a collection from stolen items from multiple sources. Please feel free to stole these too. There is support for Bash 4 and ZSH.
+This is a collection from stolen items from multiple sources. Please feel free to stole these too. There is support for Bash and ZSH.
 
 ## Installing
 1. Launch Zsh:
@@ -32,5 +32,11 @@ GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 </pre>
 
+## Docs
+* [Bash features](Docs/BASH.md)
+* [Git features](Docs/GIT.md)
+* [JavaScript code conventions](Docs/CONVENTIONS.md)
+
 ## References
 * [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
+* [robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)

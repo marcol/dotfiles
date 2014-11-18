@@ -1,4 +1,4 @@
-# Code Conventions
+# JavaScript Code Conventions
 
 ## Indentation
 Each indentation level is made up of four spaces. Do not use tabs.
