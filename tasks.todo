@@ -3,6 +3,8 @@ ZSH
  ☐ Config zshrc (clean up file)
  ✔ Config other .zsh files @done (14-11-18 23:33)
  ☐ Check how to integrate exports
+ ☐ Integrate aliases
+ ☐ Integrate functions
 
 Bash files
  ✔ Add bash files @done (14-11-10 23:32)
@@ -10,7 +12,7 @@ Bash files
      ✔ bash_profile @done (14-11-10 23:32)
      ✔ bash_prompt @done (14-11-10 23:32)
      ✔ bashrc @done (14-11-10 23:32)
- ☐ Create documentation for Bash
+ ✔ Create documentation for Bash @done (14-11-18 23:38)
 
 Install
  ✔ Add initial download and setup @done (14-11-09 23:53)
@@ -26,7 +28,7 @@ Other
 Other files
  ✔ Add bowerrc @done (14-11-10 23:33)
  ✔ Add brew - undestand how it is used, add to install @done (14-11-16 18:16)
- ☐ Add ackrc - add to install
+ ✔ Add ackrc - add to install @done (14-11-18 23:38)
  ✔ Add editorconfig @done (14-11-10 22:05)
  ✔ Add exports @done (14-11-16 17:49)
  ✔ Add extra @done (14-11-10 22:16)
@@ -49,13 +51,14 @@ Git Files
  ☐ Solve issue with author in gitconfig
 
 Documentation
- ☐ Install ZSH
- ☐ Add repo to ~
- ☐ Config zsh repo
- ☐ Extending and configure files
- ☐ Links for other resources
- ☐ Copy conventions
- ☐ Add example for .extra-git
- ☐ Add example for .extra-zsh
+ ✔ Install ZSH @done (14-11-18 23:39)
+ ✔ Add repo to ~ @done (14-11-18 23:39)
+ ✔ Config zsh repo @done (14-11-18 23:39)
+ ✔ Extending and configure files @done (14-11-18 23:39)
+ ✔ Links for other resources @done (14-11-18 23:39)
+ ✔ Copy conventions @done (14-11-18 23:39)
+ ☐ Add example for git
+ ☐ Add example for zsh
+ ☐ Mention separate files for each kind of configuration in the user folder
 
 
