@@ -17,6 +17,7 @@ Bash files
 Install
  ✔ Add initial download and setup @done (14-11-09 23:53)
  ✔ Copy non zsh or bash files @done (14-11-09 23:54)
+ ✔ Source .extra files from ~/ @done (14-11-19 16:15)
 
 Other
  ✔ Create folder structure @done (14-11-10 23:32)
@@ -60,5 +61,7 @@ Documentation
  ☐ Add example for git
  ☐ Add example for zsh
  ☐ Mention separate files for each kind of configuration in the user folder
+ ☐ Add setup for ZSH installation
+ ☐ Add setup for Bash installation
 
 

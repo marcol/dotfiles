@@ -26,21 +26,6 @@ function linkFiles() {
 
 }
 
-function sourceFiles() {
-
-    FILES="${ZDOTDIR:-$HOME}/.dotfiles/User/!(*.md)"
-
-    echo "\n*** Sourcing files"
-
-    for rcfile in $FILES; do
-        if [ -e "${ZDOTDIR:-$HOME}/."$(basename "$rcfile") ]; then
-            echo "sourcing: "$(basename "$rcfile")
-            source "${ZDOTDIR:-$HOME}/."$(basename "$rcfile")
-        fi
-    done
-
-}
-
 # link files
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
     linkFiles
@@ -52,7 +37,6 @@ else
         shopt -s extglob
 
         linkFiles
-        sourceFiles
 
         shopt -u extglob
 
@@ -62,4 +46,3 @@ else
 fi
 
 unset linkFiles
-unset sourceFiles
