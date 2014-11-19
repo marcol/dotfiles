@@ -58,10 +58,10 @@ Documentation
  ✔ Extending and configure files @done (14-11-18 23:39)
  ✔ Links for other resources @done (14-11-18 23:39)
  ✔ Copy conventions @done (14-11-18 23:39)
- ☐ Add example for git
- ☐ Add example for zsh
- ☐ Mention separate files for each kind of configuration in the user folder
- ☐ Add setup for ZSH installation
- ☐ Add setup for Bash installation
+ ✔ Add example for git @done (14-11-19 16:21)
+ ✔ Add example for zsh @done (14-11-19 16:21)
+ ✔ Mention separate files for each kind of configuration in the user folder @done (14-11-19 16:21)
+ ✔ Add setup for ZSH installation @done (14-11-19 16:21)
+ ✔ Add setup for Bash installation @done (14-11-19 16:21)
 
 
