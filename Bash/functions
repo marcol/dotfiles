@@ -135,4 +135,3 @@ width () {
 height () {
   echo $(sips -g pixelHeight $1 | grep -oE "[[:digit:]]{1,}$")
 }
-

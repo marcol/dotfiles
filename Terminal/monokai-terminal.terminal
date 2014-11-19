@@ -103,17 +103,19 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGGBlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
 	AAGGoKQHCBESVSRudWxs1AkKCwwNDg8QVk5TU2l6ZVhOU2ZGbGFnc1ZOU05hbWVWJGNs
-	YXNzI0AoAAAAAAAAEBCAAoADVk1vbmFjb9ITFBUWWiRjbGFzc25hbWVYJGNsYXNzZXNW
-	TlNGb250ohUXWE5TT2JqZWN0XxAPTlNLZXllZEFyY2hpdmVy0RobVHJvb3SAAQgRGiMt
-	Mjc8QktSW2JpcnR2eH+Ej5ifoqu9wMUAAAAAAAABAQAAAAAAAAAcAAAAAAAAAAAAAAAA
-	AAAAxw==
+	YXNzI0AoAAAAAAAAEBCAAoADXU1lbmxvLVJlZ3VsYXLSExQVFlokY2xhc3NuYW1lWCRj
+	bGFzc2VzVk5TRm9udKIVF1hOU09iamVjdF8QD05TS2V5ZWRBcmNoaXZlctEaG1Ryb290
+	gAEIERojLTI3PEJLUltiaXJ0dniGi5afpqmyxMfMAAAAAAAAAQEAAAAAAAAAHAAAAAAA
+	AAAAAAAAAAAAAM4=
 	</data>
 	<key>FontAntialias</key>
 	<integer>1</integer>
+	<key>FontHeightSpacing</key>
+	<real>1.05</real>
 	<key>Linewrap</key>
 	<true/>
 	<key>ProfileCurrentVersion</key>
-	<real>2.02</real>
+	<real>2.04</real>
 	<key>SelectionColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
@@ -126,17 +128,17 @@
 	<key>ShouldLimitScrollback</key>
 	<integer>0</integer>
 	<key>ShowActiveProcessInTitle</key>
-	<integer>0</integer>
+	<true/>
 	<key>ShowCommandKeyInTitle</key>
 	<integer>1</integer>
 	<key>ShowDimensionsInTitle</key>
-	<integer>0</integer>
+	<false/>
 	<key>ShowShellCommandInTitle</key>
-	<integer>0</integer>
+	<false/>
 	<key>ShowTTYNameInTitle</key>
-	<integer>0</integer>
+	<false/>
 	<key>ShowWindowSettingsNameInTitle</key>
-	<integer>0</integer>
+	<false/>
 	<key>TextBoldColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
@@ -160,6 +162,8 @@
 	<false/>
 	<key>VisualBell</key>
 	<true/>
+	<key>VisualBellOnlyWhenMuted</key>
+	<false/>
 	<key>blackColour</key>
 	<data>
 	BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm
@@ -240,14 +244,6 @@
 		<string>[33~</string>
 		<key>$F70F</key>
 		<string>[34~</string>
-		<key>$F729</key>
-		<string>[H</string>
-		<key>$F72B</key>
-		<string>[F</string>
-		<key>$F72C</key>
-		<string>[5~</string>
-		<key>$F72D</key>
-		<string>[6~</string>
 		<key>F704</key>
 		<string>OP</string>
 		<key>F705</key>
@@ -294,10 +290,6 @@
 		<string>[H</string>
 		<key>F72B</key>
 		<string>[F</string>
-		<key>F72C</key>
-		<string>scrollPageUp:</string>
-		<key>F72D</key>
-		<string>scrollPageDown:</string>
 		<key>^F702</key>
 		<string>[5D</string>
 		<key>^F703</key>

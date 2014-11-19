@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#!/bin/sh
+
 # Exports
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:~/bin:$PATH"
 
@@ -40,3 +42,6 @@ export GREP_OPTIONS="--color=auto"
 
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# Android
+export PATH=${PATH}:/Applications/Android\ Studio.app/sdk/platform-tools:/Applications/Android\ Studio.app/sdk/tools

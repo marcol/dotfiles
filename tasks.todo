@@ -1,0 +1,64 @@
+ZSH
+ ✔ Add prezto as submodule @done (14-11-10 00:00)
+ ☐ Config zshrc (clean up file)
+ ✔ Config other .zsh files @done (14-11-18 23:33)
+ ☐ Check how to integrate exports
+ ☐ Integrate aliases
+ ☐ Integrate functions
+
+Bash files
+ ✔ Add bash files @done (14-11-10 23:32)
+     ✔ Aliases @done (14-11-10 23:32)
+     ✔ bash_profile @done (14-11-10 23:32)
+     ✔ bash_prompt @done (14-11-10 23:32)
+     ✔ bashrc @done (14-11-10 23:32)
+ ✔ Create documentation for Bash @done (14-11-18 23:38)
+
+Install
+ ✔ Add initial download and setup @done (14-11-09 23:53)
+ ✔ Copy non zsh or bash files @done (14-11-09 23:54)
+
+Other
+ ✔ Create folder structure @done (14-11-10 23:32)
+ ✔ Create release for bash @done (14-11-10 23:32)
+ ✔ Create branch for development @done (14-11-10 23:32)
+ ✔ Terminal colors @done (14-11-10 23:32)
+ ✔ iTem config @done (14-11-10 23:39)
+
+Other files
+ ✔ Add bowerrc @done (14-11-10 23:33)
+ ✔ Add brew - undestand how it is used, add to install @done (14-11-16 18:16)
+ ✔ Add ackrc - add to install @done (14-11-18 23:38)
+ ✔ Add editorconfig @done (14-11-10 22:05)
+ ✔ Add exports @done (14-11-16 17:49)
+ ✔ Add extra @done (14-11-10 22:16)
+ ✔ Add functions @done (14-11-10 23:33)
+ ✔ Add hushlogin @done (14-11-10 22:26)
+ ✔ Add inputrc @done (14-11-16 18:54)
+ ✔ Add jsbeatifyrc @done (14-11-09 23:54)
+ ✔ Add jscsrc @done (14-11-09 23:54)
+ ✔ Add jshintrc @done (14-11-09 23:54)
+ ✔ Add npmignore @done (14-11-10 22:44)
+ ✔ Add osx @done (14-11-16 17:54)
+ ✔ Add screenrc @done (14-11-10 22:30)
+
+Git Files
+ ✔ Add gitconfig @done (14-11-16 17:54)
+ ✔ Add gitignore @done (14-11-16 17:54)
+ ✔ Add gitmodules @done (14-11-10 00:06)
+ ☐ Update gitconfig
+ ☐ Add completion for zsh
+ ☐ Solve issue with author in gitconfig
+
+Documentation
+ ✔ Install ZSH @done (14-11-18 23:39)
+ ✔ Add repo to ~ @done (14-11-18 23:39)
+ ✔ Config zsh repo @done (14-11-18 23:39)
+ ✔ Extending and configure files @done (14-11-18 23:39)
+ ✔ Links for other resources @done (14-11-18 23:39)
+ ✔ Copy conventions @done (14-11-18 23:39)
+ ☐ Add example for git
+ ☐ Add example for zsh
+ ☐ Mention separate files for each kind of configuration in the user folder
+
+
