@@ -7,8 +7,10 @@ alchemy_git_branch() {
 }
 
 alchemy_git_status() {
+
     _index=$(command git status --porcelain -b 2> /dev/null)
     _status=""
+
     if $(echo "$_index" | grep '^[AMRD]. ' &> /dev/null); then
         _status="$_status$ZSH_THEME_GIT_PROMPT_STAGED"
     fi
@@ -33,7 +35,8 @@ alchemy_git_status() {
     if $(echo "$_index" | grep '^## .*diverged' &> /dev/null); then
         _status="$_status$ZSH_THEME_GIT_PROMPT_DIVERGED"
     fi
-    if [[ _status == "" ]]; then
+
+    if [[ $_status == "" ]]; then
         _status="$ZSH_THEME_GIT_PROMPT_CLEAN"
     fi
 
