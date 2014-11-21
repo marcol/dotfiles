@@ -1,9 +1,12 @@
 #!/usr/bin/env python
 
 alchemy_git_branch() {
-  ref=$(command git symbolic-ref HEAD 2> /dev/null) || \
-  ref=$(command git rev-parse --short HEAD 2> /dev/null) || return
-  echo "${ref#refs/heads/}"
+
+    ref=$(command git symbolic-ref HEAD 2> /dev/null) || \
+    ref=$(command git rev-parse --short HEAD 2> /dev/null) || return
+
+    echo "${ref#refs/heads/}"
+
 }
 
 alchemy_git_status() {
@@ -44,11 +47,14 @@ alchemy_git_status() {
 }
 
 alchemy_git_prompt() {
+
     local branch=$(alchemy_git_branch)
     local prompt=""
+
     if [[ "${branch}x" != "x" ]]; then
         prompt="in %{$fg[blue]%}$(current_branch) $(alchemy_git_status)%{$fg[blue]%}%{$reset_color%}"
     fi
+    
     echo $prompt
 }
 
