@@ -26,7 +26,7 @@ ZSH_CUSTOM=$HOME/.dotfiles/oh-my-zsh-custom
 # Custom plugins may be added to ~/.dotfiles/oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew bower)
+plugins=(git tmux copyfile cp extract colorize osx sublime bower)
 
 # Load extras
 for file in ~/.extra*; do
@@ -42,15 +42,12 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
-# programs
-alias subl='open -a "Sublime Text"'
-
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
     export EDITOR='vim'
 else
     export EDITOR='subl'
-# fi
+fi
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
