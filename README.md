@@ -1,5 +1,5 @@
 # Dotfiles
-This is a collection from stolen items from multiple sources. Please feel free to stole these too. There is support for Bash and ZSH.
+This is a collection from stolen items from multiple sources. Please feel free to stole these too. There is support for Bash and ZSH. The ZSH support has [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) as a submodule.
 
 ## Installing
 1. Clone the repository:
@@ -18,6 +18,12 @@ chsh -s /bin/zsh
 ## Setup extra
 The <code>extra</code> file should hold your personal configuration, you can place inside any of the folder of the repository. Do not add it to the git repo.
 
+You can setup the theme and plugins in an extra file:
+```bash
+ZSH_THEME="alchemy"
+plugins=(git tmux copyfile cp extract colorize osx sublime bower)
+```
+
 <pre>
 GIT_AUTHOR_NAME="Your name"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
@@ -31,6 +37,7 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 * [Bash features](Docs/BASH.md)
 * [Git features](Docs/GIT.md)
 * [JavaScript code conventions](Docs/CONVENTIONS.md)
+* [Check oh-my-shell for the available plugins](http://ohmyz.sh)
 
 ## References
 * [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
