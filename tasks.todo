@@ -1,8 +1,8 @@
 ZSH
  ✔ Add prezto as submodule @done (14-11-10 00:00)
- ☐ Config zshrc (clean up file)
+ ✔ Config zshrc (clean up file) @done (14-11-22 22:43)
  ✔ Config other .zsh files @done (14-11-18 23:33)
- ☐ Check how to integrate exports
+ ✔ Check how to integrate exports @done (14-11-22 22:44)
  ☐ Integrate aliases
  ☐ Integrate functions
 
@@ -48,8 +48,8 @@ Git Files
  ✔ Add gitignore @done (14-11-16 17:54)
  ✔ Add gitmodules @done (14-11-10 00:06)
  ☐ Update gitconfig
- ☐ Add completion for zsh
- ☐ Solve issue with author in gitconfig
+ ✔ Add completion for zsh @done (14-11-22 22:54)
+ ✔ Solve issue with author in gitconfig @done (14-11-22 22:54)
 
 Documentation
  ✔ Install ZSH @done (14-11-18 23:39)
