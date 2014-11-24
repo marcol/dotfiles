@@ -29,9 +29,23 @@ function unidecode() {
     echo # newline
 }
 
-# Aliases
+# Function aliases
 alias mkd='createDirectoryAndEnter'
 alias exportGit='gitTarball'
 alias gz='gz'
 alias escape='escape'
 alias unidecode='unidecode'
+
+# Other aliases
+# File size
+alias fs="stat -f \"%z bytes\""
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
+
+# Kill all the tabs in Chrome to free up memory
+# [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
+alias killchrome="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+
+# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'

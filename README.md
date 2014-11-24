@@ -36,6 +36,7 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 ## Docs
 * [Bash features](Docs/BASH.md)
 * [Git features](Docs/GIT.md)
+* [Alchemy oh-my-zsh plugin](Docs/ZSH-ALCHEMY.md)
 * [JavaScript code conventions](Docs/CONVENTIONS.md)
 * [Check oh-my-shell for the available plugins](http://ohmyz.sh)
 

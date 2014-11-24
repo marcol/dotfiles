@@ -3,8 +3,8 @@ ZSH
  ✔ Config zshrc (clean up file) @done (14-11-22 22:43)
  ✔ Config other .zsh files @done (14-11-18 23:33)
  ✔ Check how to integrate exports @done (14-11-22 22:44)
- ☐ Integrate aliases
- ☐ Integrate functions
+ ✔ Integrate aliases @done (14-11-24 22:57)
+ ✔ Integrate functions @done (14-11-24 22:45)
 
 Bash files
  ✔ Add bash files @done (14-11-10 23:32)
@@ -63,3 +63,7 @@ Documentation
  ✔ Mention separate files for each kind of configuration in the user folder @done (14-11-19 16:21)
  ✔ Add setup for ZSH installation @done (14-11-19 16:21)
  ✔ Add setup for Bash installation @done (14-11-19 16:21)
+
+Other items
+ ☐ Install and setup ack
+ ☐ Install and setup awk
