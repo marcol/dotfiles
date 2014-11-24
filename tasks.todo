@@ -47,7 +47,7 @@ Git Files
  ✔ Add gitconfig @done (14-11-16 17:54)
  ✔ Add gitignore @done (14-11-16 17:54)
  ✔ Add gitmodules @done (14-11-10 00:06)
- ☐ Update gitconfig
+ ✔ Update gitconfig @done (14-11-24 22:15)
  ✔ Add completion for zsh @done (14-11-22 22:54)
  ✔ Solve issue with author in gitconfig @done (14-11-22 22:54)
 
@@ -63,7 +63,3 @@ Documentation
  ✔ Mention separate files for each kind of configuration in the user folder @done (14-11-19 16:21)
  ✔ Add setup for ZSH installation @done (14-11-19 16:21)
  ✔ Add setup for Bash installation @done (14-11-19 16:21)
-
-Links
- ☐ https://www.alexscotton.com/post/a-modular-responsive-zsh-theme-and-some-bonus-unix-commands
- ☐ 
