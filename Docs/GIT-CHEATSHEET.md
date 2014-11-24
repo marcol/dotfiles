@@ -4,6 +4,8 @@
 * <code>git remote -v</code> Get information for the remote
 * <code>git branch -a</code> Get branches information
 * <code>git tag -l</code> Get tags information
+* <code>git push origin --delete [branch]</code> Remove a branch from remote
+* <code>git remote -D [branch]</code> Remove local branch
 
 ## Status and history
 * <code>git status -s -b -unormal</code> Get git status
