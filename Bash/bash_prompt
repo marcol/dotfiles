@@ -8,8 +8,6 @@ if [ -e /usr/share/terminfo/x/xterm-256color ]; then
     export TERM='xterm-256color'
 fi
 
-tput sgr 0 0
-
 # Base styles and color palette
 # Solarized colors
 # https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized
