@@ -45,3 +45,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # Android
 export PATH=${PATH}:/Applications/Android\ Studio.app/sdk/platform-tools:/Applications/Android\ Studio.app/sdk/tools
+
+# NVM
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
