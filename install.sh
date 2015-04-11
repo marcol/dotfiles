@@ -2,7 +2,6 @@
 
 # Update repository
 echo "Updating repository from Github"
-git pull origin zsh
 git submodule init
 git submodule update
 
