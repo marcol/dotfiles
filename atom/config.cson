@@ -1,0 +1,18 @@
+"*":
+  "exception-reporting":
+    userId: "4013c4b5-1566-4bf2-d3df-18b69c7eb8f0"
+  welcome:
+    showOnStartup: false
+  linter:
+    ignoredLinterErrors: [
+      "scspell"
+    ]
+  core:
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+  editor:
+    invisibles: {}
+    fontFamily: "Menlo"
+    tabLength: 4

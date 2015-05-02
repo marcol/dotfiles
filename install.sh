@@ -12,6 +12,7 @@ function linkFiles() {
         ${ZDOTDIR:-$HOME}/.dotfiles/JavaScript/!(*.md)
         ${ZDOTDIR:-$HOME}/.dotfiles/Git/!(*.md)
         ${ZDOTDIR:-$HOME}/.dotfiles/User/!(*.md)
+        ${ZDOTDIR:-$HOME}/.dotfiles/atom
         ${ZDOTDIR:-$HOME}/.dotfiles/Zsh/!(*.md)"
 
     echo "\n*** Linking files"
