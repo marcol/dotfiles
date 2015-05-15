@@ -6,13 +6,19 @@
   linter:
     ignoredLinterErrors: [
       "scspell"
+      "jsonlint"
+      "tidy"
     ]
   core:
     themes: [
       "seti-ui"
       "seti-syntax"
     ]
+    disabledPackages: [
+      "file-icons"
+    ]
   editor:
-    invisibles: {}
+    invisibles:
+      {}
     fontFamily: "Menlo"
     tabLength: 4

@@ -44,7 +44,6 @@
         "use-isnan": 1,
         "valid-jsdoc": [1, {
             "prefer": {
-                "return": "returns",
                 "requireReturn": false,
                 "requireReturnDescription": false,
                 "requireParamDescription": true
