@@ -18,7 +18,6 @@
       "file-icons"
     ]
   editor:
-    invisibles:
-      {}
+    invisibles: {}
     fontFamily: "Menlo"
     tabLength: 4
