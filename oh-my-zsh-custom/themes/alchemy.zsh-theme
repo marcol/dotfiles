@@ -52,7 +52,7 @@ alchemy_git_prompt() {
     local prompt=""
 
     if [[ "${branch}x" != "x" ]]; then
-        prompt="in %{$fg[blue]%}$(current_branch) $(alchemy_git_status)%{$fg[blue]%}%{$reset_color%}"
+        prompt="in %{$fg[green]%}$(current_branch) $(alchemy_git_status)%{$fg[blue]%}%{$reset_color%}"
     fi
     
     echo $prompt
@@ -72,8 +72,8 @@ ZSH_THEME_GIT_PROMPT_BEHIND="%{$fg[red]%}▾%{$reset_color%}"
 
 # The prompt
 PROMPT=$'
-%{$fg[green]%}%~%{$reset_color%} $(alchemy_git_prompt)
-%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m %{$fg[magenta]%}%{$reset_color%} '
+%{$fg[blue]%}%~%{$reset_color%} $(alchemy_git_prompt)
+%{$fg[cyan]%}%n%{$reset_color%}@%{$fg[yellow]%}%m %{$fg[magenta]%}%{$reset_color%} '
 
 # The right-hand prompt
 RPROMPT='%*'
