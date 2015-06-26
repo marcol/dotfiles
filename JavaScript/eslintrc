@@ -125,7 +125,7 @@
         "no-restricted-modules": 0,
         "no-sync": 2,
 
-        "indent": 2,
+        "indent": 4,
         "brace-style": 1,
         "camelcase": [2, {"properties": "always"}],
         "comma-spacing": [1, {"before": false, "after": true}],
