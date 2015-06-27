@@ -23,11 +23,11 @@ CYAN=$(tput setaf 6)
 GREEN=$(tput setaf 2)
 WHITE=$(tput setaf 15)
 
-style_user="\[${RESET}${MAGENTA}\]"
-style_host="\[${RESET}${ORANGE}\]"
-style_path="\[${RESET}${GREEN}\]"
+style_user="\[${RESET}${CYAN}\]"
+style_host="\[${RESET}${YELLOW}\]"
+style_path="\[${RESET}${BLUE}\]"
 style_chars="\[${RESET}${WHITE}\]"
-style_branch="${PURPLE}"
+style_branch="${GREEN}"
 
 if [[ "$SSH_TTY" ]]; then
     # connected via ssh
