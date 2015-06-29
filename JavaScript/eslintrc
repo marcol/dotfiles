@@ -50,7 +50,6 @@
             "words": true,
             "nonwords": false
         }],
-        "spaced-comment": [1, "always"],
 
         "max-depth": [1, 3],
         "max-len": [1, 80, 4],
