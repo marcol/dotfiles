@@ -1,18 +1,7 @@
 {
-    "globals": {},
-
     "env": {
         "browser": true,
-        "node": false,
-        "amd": true,
-        "mocha": false,
-        "jasmine": false,
-        "phantomjs": false,
-        "jquery": false,
-        "prototypejs": false,
-        "shelljs": false,
-        "meteor": false,
-        "es6": false
+        "amd": true
     },
 
     "rules": {
