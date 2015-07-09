@@ -25,7 +25,7 @@
     dci = !"git --no-pager diff --patch-with-stat origin/$(git rev-parse --abbrev-ref HEAD)..HEAD; echo \"\n---> $(git rev-list --count HEAD origin/$(git rev-parse --abbrev-ref HEAD)...HEAD) commit(s) total\""
     dlast = diff HEAD^
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --
-    g = grep -I
+    g = grep --break --heading --line-number
     hist = log --graph --color=always --pretty='[%C(cyan)%h%Creset]%C(cyan)%d%Creset %s' --all
     rank = shortlog --numbered --summary --email --no-merges --since='3 months'
     snapshot = !git stash save "snapshot: $(date)" && git stash apply 'stash@{0}'
