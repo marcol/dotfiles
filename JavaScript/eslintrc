@@ -22,7 +22,6 @@
         "no-self-compare": 1,
         "no-unneeded-ternary": 1,
         "one-var": [1, "always"],
-        "padded-blocks": [1, "always"],
         "radix": 1,
         "vars-on-top": 1,
         "wrap-iife": [1, 'outside'],
