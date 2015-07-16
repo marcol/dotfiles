@@ -10,7 +10,6 @@
             "requireReturnDescription": false,
             "requireParamDescription": true
         }],
-
         "block-scoped-var": 2,
         "complexity": [1, 6],
         "guard-for-in": 1,
@@ -32,6 +31,10 @@
         "comma-style": [1, "last"],
         "indent": [2, 4, {
             "indentSwitchCase": true}
+        ],
+        "dot-notation": [2, {
+            "allowKeywords": false,
+            "allowPattern": ""}
         ],
         "max-nested-callbacks": [1, 3],
         "quotes": [1, "single", "avoid-escape"],
