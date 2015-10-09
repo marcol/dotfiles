@@ -26,7 +26,7 @@
     dlast = diff HEAD^
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --
     g = grep --break --heading --line-number
-    hist = log --graph --color=always --pretty='[%C(cyan)%h%Creset]%C(cyan)%d%Creset %s' --all
+    hist = log --color --graph --date-order --pretty=format:'[%C(yellow)%h%Creset] %C(cyan)%ci%Creset %C(blue)%an%Creset -%C(yellow)%d%Creset %s %C(dim green)(%cr)%Creset' --abbrev-commit --all
     rank = shortlog --numbered --summary --email --no-merges --since='3 months'
     snapshot = !git stash save "snapshot: $(date)" && git stash apply 'stash@{0}'
     snapshots = !git stash list --grep snapshot
