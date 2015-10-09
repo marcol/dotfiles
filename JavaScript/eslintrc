@@ -29,9 +29,7 @@
             "allowSingleLine": true
         }],
         "comma-style": [1, "last"],
-        "indent": [2, 4, {
-            "indentSwitchCase": true}
-        ],
+        "indent": 2,
         "dot-notation": [2, {
             "allowKeywords": false,
             "allowPattern": ""}
