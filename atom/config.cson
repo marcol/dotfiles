@@ -13,3 +13,6 @@
     fontFamily: "Menlo"
     fontSize: 12
   linter: {}
+  minimap:
+    plugins:
+      "highlight-selected": true
