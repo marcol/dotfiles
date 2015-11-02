@@ -25,3 +25,7 @@ bower_components/
 # Current project
 extra
 extra-*
+
+# Atom
+atom/packages
+atom/.apm
