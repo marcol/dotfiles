@@ -76,3 +76,6 @@
     insteadOf = "gist:"
 [push]
     default = matching
+[user]
+	name = Marco Dias Lopes
+	email = marco@diaslopes.com
