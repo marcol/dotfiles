@@ -1,23 +1,15 @@
 "*":
   "exception-reporting":
-    userId: "4013c4b5-1566-4bf2-d3df-18b69c7eb8f0"
+    userId: "742c0d56-5eea-c837-2bbe-f6b9a5860774"
   welcome:
     showOnStartup: false
-  linter:
-    ignoredLinterErrors: [
-      "scspell"
-      "jsonlint"
-      "tidy"
-    ]
   core:
     themes: [
       "seti-ui"
       "seti-syntax"
     ]
-    disabledPackages: [
-      "file-icons"
-    ]
   editor:
     invisibles: {}
     fontFamily: "Menlo"
-    tabLength: 4
+    fontSize: 12
+  linter: {}
