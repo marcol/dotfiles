@@ -26,6 +26,3 @@ bower_components/
 extra
 extra-*
 
-# Atom
-atom/packages
-atom/.apm
