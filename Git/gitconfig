@@ -57,7 +57,6 @@
     excludesfile = ~/.gitignore
     attributesfile = ~/.gitattributes
     whitespace = space-before-tab,indent-with-non-tab,trailing-space
-    editor = atom --wait
 [merge]
     log = true
     summary = true
