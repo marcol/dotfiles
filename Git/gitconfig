@@ -5,7 +5,7 @@
     ci = commit
     ca = !git add -A && git commit -av
     co = checkout
-    up = !sh -c 'git pull --rebase --prune && git log --pretty=format:\"%Cred%ae %Creset- %C(yellow)%s %Creset(%ar)\" HEAD@{1}..'
+    up = !sh -c 'git pull --rebase --prune && git log --pretty=format:\"%C(yellow)%ae %Creset- %C(blue)%s %Creset(%ar)\" HEAD@{1}..'
     rb = rebase
     ps = push
     cp = cherry-pick -x
@@ -24,11 +24,11 @@
     dh = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
     dci = !"git --no-pager diff --patch-with-stat origin/$(git rev-parse --abbrev-ref HEAD)..HEAD; echo \"\n---> $(git rev-list --count HEAD origin/$(git rev-parse --abbrev-ref HEAD)...HEAD) commit(s) total\""
     dlast = diff HEAD^
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --
+    lg = log --color --graph --pretty=format:'%C(yellow)%h%Creset - %C(cyan)%an%Creset %s %Cgreen(%cr) %C(blue)%d%Creset' --abbrev-commit --
     g = grep --break --heading --line-number
     hist = log --color --graph --date-order --pretty=format:'[%C(yellow)%h%Creset] %C(cyan)%ci%Creset %C(blue)%an%Creset -%C(yellow)%d%Creset %s %C(dim green)(%cr)%Creset' --abbrev-commit --all
     rank = shortlog --numbered --summary --email --no-merges --since='3 months'
-    mine = log --author='$(git config user.email)' --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --
+    mine = !"git log --author=$(git config user.email) --color --graph --pretty=format:'%C(yellow)%h%Creset - %C(cyan)%an%Creset %s %Cgreen(%cr)' --abbrev-commit --"
     snapshot = !git stash save "snapshot: $(date)" && git stash apply 'stash@{0}'
     snapshots = !git stash list --grep snapshot
 [color]
