@@ -28,7 +28,7 @@
     g = grep --break --heading --line-number
     hist = log --color --graph --date-order --pretty=format:'[%C(yellow)%h%Creset] %C(cyan)%ci%Creset %C(blue)%an%Creset -%C(yellow)%d%Creset %s %C(dim green)(%cr)%Creset' --abbrev-commit --all
     rank = shortlog --numbered --summary --email --no-merges --since='3 months'
-    mine = !"git log --author=$(git config user.email) --color --graph --pretty=format:'%C(yellow)%h%Creset - %C(cyan)%an%Creset %s %Cgreen(%cr)' --abbrev-commit --"
+    mine = !git log -25 --author="$GIT_AUTHOR_EMAIL" --color --graph --pretty=format:'%C(yellow)%h%Creset - %C(cyan)%an%Creset %s %Cgreen(%cr)' --abbrev-commit --
     snapshot = !git stash save "snapshot: $(date)" && git stash apply 'stash@{0}'
     snapshots = !git stash list --grep snapshot
 [color]
