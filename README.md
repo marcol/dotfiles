@@ -1,4 +1,4 @@
-# Dotfiles
+# My Dotfiles
 This is a collection from stolen items from multiple sources. Please feel free to stole these too. There is support for Bash and ZSH. The ZSH support has [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) as a submodule.
 
 ## Installing
@@ -8,6 +8,7 @@ git clone --recursive https://github.com/marcol/dotfiles.git "${ZDOTDIR:-$HOME}/
 ```
 2. Run the instalation script
 ```prompt
+cd "${ZDOTDIR:-$HOME}/.dotfiles"
 ./install.sh
 ```
 3. If you want to use Bash just reload the Terminal If you want to start use ZSH you can set it as your default shell:
@@ -15,31 +16,49 @@ git clone --recursive https://github.com/marcol/dotfiles.git "${ZDOTDIR:-$HOME}/
 chsh -s /bin/zsh
 ```
 
-## Setup extra
-The <code>extra</code> file should hold your personal configuration, you can place inside any of the folder of the repository. Do not add it to the git repo.
+## Configuring
+If further configuration is needed, it can be done by adding a file named <code>extra</code> in any of the folders, or a file named <code>.extra</code> directly in the home folder.
 
-You can setup the theme and plugins in an extra file:
+In case of zsh, several configuration files can be added as long as they start with extra, e.g.: extra-home.
+
+### ZSH
+A zsh theme and/or plugins can be setup this way:
 ```bash
 ZSH_THEME="alchemy"
 plugins=(git tmux copyfile cp extract colorize osx sublime bower)
 ```
 
-<pre>
+### Git
+Git configuration, names and emails should not be part of the git repository for obvious reasons, they should be defined in one of these configuration files.
+
+```bash
 GIT_AUTHOR_NAME="Your name"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-git config --global user.name "$GIT_AUTHOR_NAME"
 GIT_AUTHOR_EMAIL="youremail@example.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
-git config --global user.email "$GIT_AUTHOR_EMAIL"
-</pre>
+```
 
-## Docs
-* [Bash features](Docs/BASH.md)
-* [Git features](Docs/GIT.md)
-* [Alchemy oh-my-zsh plugin](Docs/ZSH-ALCHEMY.md)
-* [JavaScript code conventions](Docs/CONVENTIONS.md)
+
+## Documentation
+* [Aliases](docs/ALIASES.md)
+* [Functions](docs/FUNCTIONS.md)
+* [ZSH Alchemy Plugin](docs/ZSH-ALCHEMY.md)
 * [Check oh-my-shell for the available plugins](http://ohmyz.sh)
 
 ## References
 * [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
 * [robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+
+## TODO
+* Check all aliases
+* Check functions
+* Clean bash files
+ * aliases
+ * bash_profile
+ * bash_prompt - done
+ * bashrc - done
+ * functions
+ * profile - done
+* Clean zsh files
+* Create solution for Gitfiles
+* Update docs

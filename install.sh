@@ -7,6 +7,9 @@ git submodule update
 
 function linkFiles() {
 
+    # Create extra file
+    touch "${ZDOTDIR:-$HOME}/.extra"
+
     FILES="${ZDOTDIR:-$HOME}/.dotfiles/System/!(*.md)
         ${ZDOTDIR:-$HOME}/.dotfiles/Bash/!(*.md)
         ${ZDOTDIR:-$HOME}/.dotfiles/JavaScript/!(*.md)
