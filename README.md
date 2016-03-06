@@ -40,25 +40,12 @@ GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 
 
 ## Documentation
-* [Aliases](docs/ALIASES.md)
-* [Functions](docs/FUNCTIONS.md)
+* [Bash](docs/BASH.md)
+* [Git](docs/GIT.md)
 * [ZSH Alchemy Plugin](docs/ZSH-ALCHEMY.md)
-* [Check oh-my-shell for the available plugins](http://ohmyz.sh)
+
 
 ## References
+* [Check oh-my-shell for the available plugins](http://ohmyz.sh)
 * [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
 * [robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-
-## TODO
-* Check all aliases
-* Check functions
-* Clean bash files
- * aliases
- * bash_profile
- * bash_prompt - done
- * bashrc - done
- * functions
- * profile - done
-* Clean zsh files
-* Create solution for Gitfiles
-* Update docs

@@ -50,3 +50,5 @@ export PATH=${PATH}:/Applications/Android\ Studio.app/sdk/platform-tools:/Applic
 # NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

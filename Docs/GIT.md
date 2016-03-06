@@ -26,5 +26,6 @@
 * g: Grep
 * hist: Show history log
 * rank: Displays committers in descending order of number of commits
+* mine: Check my last commits
 * snapshot: Save a snapshot with date without resetting
 * snapshots: List all snapshots

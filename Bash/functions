@@ -127,11 +127,11 @@ function extract() {
 }
 
 # Image width
-width () {
+width() {
   echo $(sips -g pixelWidth $1 | grep -oE "[[:digit:]]{1,}$")
 }
 
 # Image height
-height () {
+height() {
   echo $(sips -g pixelHeight $1 | grep -oE "[[:digit:]]{1,}$")
 }

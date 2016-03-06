@@ -51,8 +51,7 @@ export ARCHFLAGS="-arch x86_64"
 # ssh
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# Paths
 export PATH="/usr/local/sbin:$PATH"
-
-# Node
 export PATH="$HOME/.node/bin:$PATH"
+export PATH="$PATH:$HOME/.rvm/bin"
