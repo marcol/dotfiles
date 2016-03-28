@@ -306,7 +306,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Projects/GITHUB-dotfiles/Terminal</string>
+	<string>~/Projects/GITHUB-dotfiles/terminal</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
@@ -348,7 +348,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>177 171 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>590 357 710 473 0 0 1440 877 </string>
+	<string>782 313 570 473 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2527,10 +2527,12 @@
 			<string>/Users/marcodiaslopes</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveShownPromoWithId_4</key>
+	<true/>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>453327583.24769503</real>
+	<real>477791534.21486801</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>469152851.62628901</real>
+	<real>478945401.62053901</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -2577,7 +2579,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/marcodiaslopes/Projects/GITHUB-dotfiles/Terminal</string>
+	<string>/Users/marcodiaslopes/Projects/GITHUB-dotfiles/terminal</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -2595,7 +2597,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-11-21T10:08:55Z</date>
+	<date>2016-03-06T00:17:56Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>

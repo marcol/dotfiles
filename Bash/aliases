@@ -53,6 +53,9 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
+# Exec node itens
+alias npm-exec='PATH=$(npm bin):$PATH'
+
 # Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
 
@@ -84,6 +87,7 @@ alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && 
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
 # Make Grunt print stack traces by default
+alias npm-exec='PATH=$(npm bin):$PATH'
 command -v grunt > /dev/null && alias grunt="grunt --stack"
 
 # Kill all the tabs in Chrome to free up memory
