@@ -7,13 +7,9 @@ git submodule update
 
 function linkFiles() {
 
-    FILES="${ZDOTDIR:-$HOME}/.dotfiles/System/!(*.md)
+    FILES="${ZDOTDIR:-$HOME}/.dotfiles/Config/!(*.md)
         ${ZDOTDIR:-$HOME}/.dotfiles/Bash/!(*.md)
-        ${ZDOTDIR:-$HOME}/.dotfiles/JavaScript/!(*.md)
-        ${ZDOTDIR:-$HOME}/.dotfiles/Git/!(*.md)
         ${ZDOTDIR:-$HOME}/.dotfiles/User/!(*.md)
-        ${ZDOTDIR:-$HOME}/.dotfiles/Vim/!(*.md)
-        ${ZDOTDIR:-$HOME}/.dotfiles/atom
         ${ZDOTDIR:-$HOME}/.dotfiles/Zsh/!(*.md)"
 
     echo "\n*** Linking files"
