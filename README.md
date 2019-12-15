@@ -44,6 +44,7 @@ Git configuration, names and emails should not be part of the git repository for
 *   [Bash](docs/BASH.md)
 *   [Git](docs/GIT.md)
 *   [ZSH Alchemy Plugin](docs/ZSH-ALCHEMY.md)
+*   [Files](docs/FILES.md)
 
 ## References
 *   [Check oh-my-shell for the available plugins](http://ohmyz.sh)
