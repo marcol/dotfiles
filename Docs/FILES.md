@@ -15,17 +15,11 @@
 *   `ackrc` - [Ack](https://beyondgrep.com/documentation/) configuration.
 *   `brewrc` - [Homebrew](https://brew.sh/) dependencies list to be installed.
 *   `editorconfig` - Cross [editor configuration](http://editorconfig.org).
-*   `eslintignore` - List of files or folders to be ignored by [eslint](https://eslint.org/docs/user-guide/configuring).
-*   `eslintrc.json` - [eslint](https://eslint.org/docs/user-guide/configuring) configuration for JavaScript linting.
 *   `exports` - List of exports for global access.
 *   `gitconfig` - [Git](https://git-scm.com/docs/git-config) configuration with aliases.
 *   `gitignore` - List of files and folders to be ignored by [Git](https://git-scm.com/docs/gitignore).
-*   `htmlhintrc` - [HTMLHint](https://github.com/htmlhint/HTMLHint) configuration for HTML linting.
 *   `inputrc` - Configuration file for [GNU Readline](https://www.gnu.org/software/bash/manual/html_node/Invoking-Bash.html).
 *   `npmignore` - Files to be kept out of a [NPM](https://docs.npmjs.com/misc/developers) package.
-*   `remarkrc` - Markdown linting with [Remark](https://github.com/remarkjs/remark-lint) using rules that enforce the markdown style guide.
-*   `stylelintignore` - List of files or folders to be ignored by [Stylelint](https://stylelint.io/user-guide/configuration#stylelintignore).
-*   `stylelintrc.json` - [Stylelint](https://stylelint.io/user-guide/configuration) configuration for CSS linting.
 *   `vimrc` Configuration for [VIM](https://www.vim.org/).
 
 ## Terminal

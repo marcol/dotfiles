@@ -1,4 +1,2 @@
-#!/bin/sh
-
 node_modules/
 dist/
