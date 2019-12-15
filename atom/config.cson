@@ -1,0 +1,28 @@
+"*":
+  core:
+    disabledPackages: [
+      "linter"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+  editor:
+    showIndentGuide: true
+    softWrapAtPreferredLineLength: true
+    tabLength: 2
+  "exception-reporting":
+    userId: "6f0c592e-b3c5-4281-9edf-b4c159d98655"
+  "ide-vue": {}
+  "linter-eslint":
+    disabling:
+      disableWhenNoEslintConfig: false
+    lintHtmlFiles: true
+  "linter-spell": {}
+  "linter-ui-default":
+    showPanel: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
