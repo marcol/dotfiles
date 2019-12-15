@@ -12,14 +12,14 @@
 *   `zshrc` - bash configuration
 
 ## Config
-*   `ackrc`
+*   `ackrc` - [Ack](https://beyondgrep.com/documentation/) configuration.
 *   `brewrc` - [Homebrew](https://brew.sh/) dependencies list to be installed.
 *   `editorconfig` - Cross [editor configuration](http://editorconfig.org)
-*   `eslintignore`
+*   `eslintignore` - List of files to be ignored by [eslint](https://eslint.org/docs/user-guide/configuring)
 *   `eslintrc.json`
-*   `exports`
-*   `gitconfig`
-*   `gitignore`
+*   `exports` - List of exports for global access
+*   `gitconfig` - [Git](https://git-scm.com/docs/git-config) configuration with aliases
+*   `gitignore` - List of files and folders to be ignored by [Git](https://git-scm.com/docs/gitignore)
 *   `htmlhintrc`
 *   `inputrc`
 *   `npmignore`
