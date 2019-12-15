@@ -22,6 +22,7 @@
   "linter-spell": {}
   "linter-ui-default":
     showPanel: true
+  "package-sync": {}
   "tree-view":
     hideVcsIgnoredFiles: true
   welcome:
