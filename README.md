@@ -41,10 +41,10 @@ Git configuration, names and emails should not be part of the git repository for
 ```
 
 ## Documentation
-*   [Bash](docs/BASH.md)
-*   [Git](docs/GIT.md)
-*   [ZSH Alchemy Plugin](docs/ZSH-ALCHEMY.md)
-*   [Files](docs/FILES.md)
+*   [Bash](Docs/BASH.md)
+*   [Git](Docs/GIT.md)
+*   [ZSH Alchemy Plugin](Docs/ZSH-ALCHEMY.md)
+*   [Files](Docs/FILES.md)
 
 ## References
 *   [Check oh-my-shell for the available plugins](http://ohmyz.sh)
