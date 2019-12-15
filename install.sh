@@ -21,6 +21,10 @@ function linkFiles() {
     fi
   done
 
+  echo 'Create symlink for .atom/'
+  rm -rf "${ZDOTDIR:-$HOME}/."$(basename "atom")
+  ln -fs "${ZDOTDIR:-$HOME}/.dotfiles/atom" "${ZDOTDIR:-$HOME}/."$(basename "atom")
+
 }
 
 # link files
