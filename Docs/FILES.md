@@ -23,7 +23,7 @@
 *   `htmlhintrc`
 *   `inputrc`
 *   `npmignore`
-*   `remarkrc`
+*   `remarkrc` - Markdown linting with [Remark](https://github.com/remarkjs/remark-lint) using rules that enforce the markdown style guide
 *   `stylelintignore`
 *   `stylelintrc.json`
 *   `vimrc`
