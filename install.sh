@@ -7,39 +7,49 @@ git submodule update
 
 function linkFiles() {
 
-    FILES="${ZDOTDIR:-$HOME}/.dotfiles/Config/!(*.md)
-        ${ZDOTDIR:-$HOME}/.dotfiles/Bash/!(*.md)
-        ${ZDOTDIR:-$HOME}/.dotfiles/User/!(*.md)
-        ${ZDOTDIR:-$HOME}/.dotfiles/Zsh/!(*.md)"
+  FILES="${ZDOTDIR:-$HOME}/.dotfiles/Config/!(*.md)
+    ${ZDOTDIR:-$HOME}/.dotfiles/Bash/!(*.md)
+    ${ZDOTDIR:-$HOME}/.dotfiles/User/!(*.md)
+    ${ZDOTDIR:-$HOME}/.dotfiles/Zsh/!(*.md)"
 
-    echo "\n*** Linking files"
+  echo "\n*** Linking files"
 
-    for rcfile in $FILES; do
-        if [ -e $rcfile ]; then
-            echo "Creating symlink for: ."$(basename "$rcfile")
-            ln -fs "$rcfile" "${ZDOTDIR:-$HOME}/."$(basename "$rcfile")
-        fi
-    done
+  for rcfile in $FILES; do
+    if [ -e $rcfile ]; then
+      echo "Creating symlink for: ."$(basename "$rcfile")
+      ln -fs "$rcfile" "${ZDOTDIR:-$HOME}/."$(basename "$rcfile")
+    fi
+  done
 
 }
 
 # link files
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
-    linkFiles
+  linkFiles
 else
-    read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1
-    echo
-    if [[ $REPLY =~ ^[Yy]$ ]]; then
-
-        shopt -s extglob
-
-        linkFiles
-
-        shopt -u extglob
-
-    fi
-
-    echo "\nDone!"
+  read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1
+  echo
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    shopt -s extglob
+    linkFiles
+    shopt -u extglob
+  fi
 fi
+
+read -p "Do you want to install Homebrew? (y/n) " -n 1
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+  echo "Installing Homebrew"
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+read -p "Do you want to install Homebrew dependencies? (y/n) " -n 1
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+  echo "Installing Homebrew dependencies"
+  brew bundle --file=$HOME/.brewrc
+fi
+
+echo "\nDone!"
 
 unset linkFiles
