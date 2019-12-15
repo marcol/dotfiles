@@ -1,31 +1,44 @@
 #!/bin/sh
 
-# Compiled Python files
-*.pyc
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# folders
+build/
+lib-covx/
+public/
+node_modules/
+temp/
+tmp/
+
+# dotenv environment variables file
+.env
+.env.test
+.env.local
+
+# files
 *.diff
 *.err
-*.log
+*.lcov
 *.orig
 *.rej
 *.sass-cache
 *.sw?
+*.tgz
 *.vi
-
-# Folder view configuration files
-.DS_Store
-Desktop.ini
-
-# Thumbnail cache files
 ._*
-Thumbs.db
-
-# Files that might appear on external disks
+.DS_Store
+.eslintcache
+.npm
 .Spotlight-V100
 .Trashes
-
-# Sublime Text
-*.sublime-project
-*.sublime-workspace
+.yarn-integrity
+Desktop.ini
+Thumbs.db
 
 # Project Folders
 node_modules/
