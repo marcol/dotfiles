@@ -13,8 +13,8 @@
 
 ## Config
 *   `ackrc`
-*   `brewrc`
-*   `editorconfig`
+*   `brewrc` - [Homebrew](https://brew.sh/) dependencies list to be installed.
+*   `editorconfig` - Cross [editor configuration](http://editorconfig.org)
 *   `eslintignore`
 *   `eslintrc.json`
 *   `exports`
