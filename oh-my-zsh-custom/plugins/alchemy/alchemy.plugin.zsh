@@ -47,5 +47,5 @@ alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 # [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
 alias killchrome="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 
-# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
+# Update installed Ruby gems, Homebrew, npm, and their installed packages
+alias update='brew update; brew upgrade --all; brew cleanup; npm update npm -g; npm update -g; sudo gem update'

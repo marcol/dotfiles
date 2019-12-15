@@ -1,79 +1,82 @@
 #!/bin/sh
 
 [alias]
-    br = branch
-    ci = commit
-    ca = !git add -A && git commit -av
-    co = checkout
-    up = !sh -c 'git pull --rebase --prune && git log --pretty=format:\"%C(yellow)%ae %Creset- %C(blue)%s %Creset(%ar)\" HEAD@{1}..'
-    rb = rebase
-    ps = push
-    cp = cherry-pick -x
-    solve = mergetool --tool=vimdiff
-    st = status -s -b -unormal
-    tags = tag -l
-    branches = branch -a
-    remotes = remote -v
-    track = "git branch $(git rev-parse --abbrev-ref HEAD) --set-upstream-to origin/$(git rev-parse --abbrev-ref HEAD)"
-    cleanup = git clean -df
-    unstage = reset HEAD
-    uncommit = reset --soft HEAD^
-    undopush = git push -f origin HEAD^:master
-    amend = commit --amend
-    df = diff --color --color-words --abbrev
-    dh = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
-    dci = !"git --no-pager diff --patch-with-stat origin/$(git rev-parse --abbrev-ref HEAD)..HEAD; echo \"\n---> $(git rev-list --count HEAD origin/$(git rev-parse --abbrev-ref HEAD)...HEAD) commit(s) total\""
-    dlast = diff HEAD^
-    lg = log --color --graph --pretty=format:'%C(yellow)%h%Creset - %C(cyan)%an%Creset %s %Cgreen(%cr) %C(blue)%d%Creset' --abbrev-commit --
-    g = grep --break --heading --line-number
-    hist = log --color --graph --date-order --pretty=format:'[%C(yellow)%h%Creset] %C(cyan)%ci%Creset %C(blue)%an%Creset -%C(yellow)%d%Creset %s %C(dim green)(%cr)%Creset' --abbrev-commit --all
-    rank = shortlog --numbered --summary --email --no-merges --since='3 months'
-    mine = !git log -25 --author="$GIT_AUTHOR_EMAIL" --color --graph --pretty=format:'%C(yellow)%h%Creset - %C(cyan)%an%Creset %s %Cgreen(%cr)' --abbrev-commit --
-    snapshot = !git stash save "snapshot: $(date)" && git stash apply 'stash@{0}'
-    snapshots = !git stash list --grep snapshot
+  br = branch
+  ci = commit
+  ca = !git add -A && git commit -av
+  co = checkout
+  up = !sh -c 'git pull --rebase --prune && git log --pretty=format:\"%C(yellow)%ae %Creset- %C(blue)%s %Creset(%ar)\" HEAD@{1}..'
+  rb = rebase
+  ps = push
+  cp = cherry-pick -x
+  solve = mergetool --tool=vimdiff
+  st = status -s -b -unormal
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+  track = "git branch $(git rev-parse --abbrev-ref HEAD) --set-upstream-to origin/$(git rev-parse --abbrev-ref HEAD)"
+  cleanup = git clean -df
+  unstage = reset HEAD
+  uncommit = reset --soft HEAD^
+  undopush = git push -f origin HEAD^:master
+  amend = commit --amend
+  df = diff --color --color-words --abbrev
+  dh = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+  dci = !"git --no-pager diff --patch-with-stat origin/$(git rev-parse --abbrev-ref HEAD)..HEAD; echo \"\n---> $(git rev-list --count HEAD origin/$(git rev-parse --abbrev-ref HEAD)...HEAD) commit(s) total\""
+  dlast = diff HEAD^
+  lg = log --color --graph --pretty=format:'%C(yellow)%h%Creset - %C(cyan)%an%Creset %s %Cgreen(%cr) %C(blue)%d%Creset' --abbrev-commit --
+  g = grep --break --heading --line-number
+  hist = log --color --graph --date-order --pretty=format:'[%C(yellow)%h%Creset] %C(cyan)%ci%Creset %C(blue)%an%Creset -%C(yellow)%d%Creset %s %C(dim green)(%cr)%Creset' --abbrev-commit --all
+  rank = shortlog --numbered --summary --email --no-merges --since='3 months'
+  mine = !git log -25 --author="$GIT_AUTHOR_EMAIL" --color --graph --pretty=format:'%C(yellow)%h%Creset - %C(cyan)%an%Creset %s %Cgreen(%cr)' --abbrev-commit --
+  snapshot = !git stash save "snapshot: $(date)" && git stash apply 'stash@{0}'
+  snapshots = !git stash list --grep snapshot
 [color]
-    ui = always
+  ui = always
 [color "branch"]
-    current = yellow reverse
-    local = yellow
-    remote = green
+  current = yellow reverse
+  local = yellow
+  remote = green
 [color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
+  added = yellow
+  changed = green
+  untracked = cyan
 [color "diff"]
-    meta = yellow
-    frag = magenta
-    old = red
+  meta = yellow
+  frag = magenta
+  old = red
 [diff]
-    # Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
-    # instead of a/b/c/d as prefixes for patches
-    mnemonicprefix = true
-    algorithm = patience
-    new = green
+  # Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
+  # instead of a/b/c/d as prefixes for patches
+  mnemonicprefix = true
+  algorithm = patience
+  new = green
 [mergetool "vimdiff"]
-    cmd = vim -d "$LOCAL" "$MERGED" "$REMOTE"
-    trustExitCode = true
+  cmd = vim -d "$LOCAL" "$MERGED" "$REMOTE"
+  trustExitCode = true
 [core]
-    excludesfile = ~/.gitignore
-    attributesfile = ~/.gitattributes
-    whitespace = space-before-tab,indent-with-non-tab,trailing-space
+  excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
+  whitespace = space-before-tab,indent-with-non-tab,trailing-space
 [merge]
-    log = true
-    summary = true
-    verbosity = 1
-    tool = vimdiff
+  log = true
+  summary = true
+  verbosity = 1
+  tool = vimdiff
 [url "git@github.com:"]
-    insteadOf = "gh:"
-    pushInsteadOf = "github:"
-    pushInsteadOf = "git://github.com/"
+  insteadOf = "gh:"
+  pushInsteadOf = "github:"
+  pushInsteadOf = "git://github.com/"
 [url "git://github.com/"]
-    insteadOf = "github:"
+  insteadOf = "github:"
 [url "git@gist.github.com:"]
-    insteadOf = "gst:"
-    pushInsteadOf = "gist:"
-    pushInsteadOf = "git://gist.github.com/"
+  insteadOf = "gst:"
+  pushInsteadOf = "gist:"
+  pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
-    insteadOf = "gist:"
+  insteadOf = "gist:"
 [push]
-    default = matching
+  default = matching
+[user]
+	name = "$GIT_AUTHOR_NAME"
+	email = "$GIT_AUTHOR_EMAIL"

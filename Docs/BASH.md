@@ -14,7 +14,6 @@
 * fs: File size
 
 ## Edit
-* subl: Open in Sublime Text
 * c: cat with beautiful colors. requires Pygments installed.
 
 ## Web
@@ -30,13 +29,11 @@
 * tmux: tmux -2
 * please: sudo alias
 * reload: reload .bash_profile
-* update: updated OS X, Ruby gems, Homebrew, Node, npm, gem
+* update: update Homebrew, Node, npm, gem
 * trimcopy: Trim new lines and copy to clipboard
 * cleanup: Recursively delete `.DS_Store` files
 * emptytrash: Empty the Trash on all mounted volumes and the main HDD
 * lscleanup: Clean up LaunchServices to remove duplicates in the “Open * With” menu
-* hidedesktop: Hide desktop
-* showdesktop: Show desktop
 * chromekill: Kill all the Google Chrome's tabs
 
 ## Functions
