@@ -16,6 +16,8 @@ CVS
 .*.swp
 ._*
 .DS_Store
+config.gypi
+.npmrc
 
 # Log files
 npm-debug.log
@@ -24,10 +26,10 @@ npm-debug.log
 # these are used in some tests.
 !.npmignore
 
+
 # Projects
 /build
 /release
 /node_modules
 /tmp
 /temp
-
