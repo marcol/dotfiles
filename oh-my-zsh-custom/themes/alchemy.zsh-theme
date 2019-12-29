@@ -54,7 +54,7 @@ alchemy_git_prompt() {
     if [[ "${branch}x" != "x" ]]; then
         prompt="in %{$fg[green]%}$(current_branch) $(alchemy_git_status)%{$fg[blue]%}%{$reset_color%}"
     fi
-    
+
     echo $prompt
 }
 

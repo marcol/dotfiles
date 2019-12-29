@@ -1,10 +1,10 @@
 # Create a new directory and enter it
-createDirectoryAndEnter() {
+function createDirectoryAndEnter() {
     mkdir -p "$@" && cd "$@"
 }
 
 # take this repo and copy it to somewhere else minus the .git stuff.
-exportGit() {
+function gitTarball() {
     mkdir -p "$1"
     git archive master | tar -x -C "$1"
 }
