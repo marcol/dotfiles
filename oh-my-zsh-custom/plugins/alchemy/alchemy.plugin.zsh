@@ -48,4 +48,4 @@ alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 alias killchrome="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 
 # Update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='brew update; brew upgrade --all; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
+alias update='brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
