@@ -38,11 +38,14 @@ export LESS_TERMCAP_md="$ORANGE"
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto"
 
-# Node
-export PATH="$HOME/.node/bin:$PATH"
-
 # NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+# Yarn
+export PATH="$PATH:/opt/yarn-[version]/bin"
+
+# Node
+export PATH="$HOME/.node/bin:$PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
