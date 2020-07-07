@@ -3,6 +3,9 @@
     disabledPackages: [
       "linter"
     ]
+    packagesWithSnippetsDisabled: [
+      "language-vue"
+    ]
     telemetryConsent: "no"
     themes: [
       "seti-ui"
@@ -19,9 +22,19 @@
     disabling:
       disableWhenNoEslintConfig: false
     lintHtmlFiles: true
+    scopes: [
+      "source.js"
+      "source.jsx"
+      "source.js.jsx"
+      "source.flow"
+      "source.babel"
+      "source.js-semantic"
+      "source.vue"
+      "source.js.embedded.html"
+      "text.html.vue"
+    ]
   "linter-spell": {}
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   "package-sync": {}
   "tree-view":
     hideVcsIgnoredFiles: true

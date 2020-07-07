@@ -10,7 +10,6 @@ yarn-error.log*
 # folders
 build/
 lib-covx/
-public/
 node_modules/
 temp/
 tmp/
