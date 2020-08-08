@@ -1,6 +1,6 @@
 {
   "name": "dotfiles",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "dotfiles",
   "keywords": [],
   "homepage": "",
@@ -17,8 +17,15 @@
     "lint:css": "stylelint **/*.html **/*.css; exit 0; htmlhint **/*.html; exit 0",
     "lint:md": "remark .; exit 0"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "dependencies": {},
   "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
     "babel-eslint": "^10.1.0",
     "eslint": "7.6.0",
     "eslint-config-standard": "^14.1.1",
@@ -32,6 +39,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "htmlhint": "^0.14.1",
+    "husky": "^4.2.5",
     "remark-cli": "^8.0.1",
     "remark-lint": "^7.0.0",
     "remark-preset-lint-markdown-style-guide": "^3.0.0",
