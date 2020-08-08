@@ -43,7 +43,7 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 # Yarn
-export PATH="$PATH:/opt/yarn-[version]/bin"
+export PATH="$(yarn global bin):$PATH"
 
 # Node
 export PATH="$HOME/.node/bin:$PATH"

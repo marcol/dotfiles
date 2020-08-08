@@ -24,4 +24,9 @@
 '.html.text.vue':
   'Vue Component':
     'prefix': 'template'
-    'body': '<template>\n  $4\n</template>\n\n<script>\nexport default {\n}\n</script>\n\n<style ${3:scoped}>\n</style>\n'
+    'body': '<template>\n  $4\n</template>\n\n<script>\nexport default {}\n</script>\n\n<style ${3:scoped}></style>\n'
+
+'.source.js':
+  'Website photo':
+    'prefix': 'ph'
+    'body': '{\n\tname: \'$1\',\n\ttags: [\'$2\'],\n\tcover: false\n}'
