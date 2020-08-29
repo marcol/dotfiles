@@ -1,4 +1,6 @@
 "*":
+  "atom-jest-snippets":
+    toggleSemicolons: false
   core:
     disabledPackages: [
       "linter"
@@ -36,6 +38,8 @@
   "linter-spell": {}
   "linter-ui-default": {}
   "package-sync": {}
+  "seti-ui":
+    compactView: true
   "tree-view":
     hideVcsIgnoredFiles: true
   welcome:

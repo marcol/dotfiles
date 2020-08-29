@@ -20,6 +20,7 @@ Thumbs.db
 node_modules/
 temp/
 tmp/
+.tmp/
 bower_components/
 
 # Current project
